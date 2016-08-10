@@ -1,0 +1,1 @@
+web: npm i && bower i && npm start
