@@ -1,0 +1,13 @@
+{
+  "name": "CTender",
+  "version": "1.0.0",
+  "description": "CTender",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Kirill Kuparev",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
