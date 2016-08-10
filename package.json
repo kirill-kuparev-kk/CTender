@@ -4,7 +4,8 @@
   "description": "CTender",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "bower install && npm install"
   },
   "author": "Kirill Kuparev",
   "dependencies": {
@@ -14,4 +15,5 @@
   "engines": {
     "node": "0.12.7"
   }
+
 }
