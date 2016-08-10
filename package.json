@@ -8,7 +8,8 @@
     "node": "0.12.7"
   },
   "scripts": {
-    "start": "bower install"
+    "start": "node server.js",
+    "postinstall": "bower cache clean && bower install"
   },
   "dependencies": {
     "express": "^4.14.0",
