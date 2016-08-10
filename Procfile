@@ -1,1 +1,1 @@
-web: npm i && bower i && npm start
+web: npm i&&bower i&&node server.js
