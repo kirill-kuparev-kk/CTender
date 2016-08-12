@@ -12,7 +12,7 @@
          </div>
           <div class="number">
               <p class="numberNum">8 (800) 505-10-42</p>
-              <a style="font-size:10px">бесплатная консультация</a>
+              <a style="font-size:10px" ng-click="clickToOpen()">бесплатная консультация</a>
           </div>
     </div>
     <div class="menu" >
@@ -44,106 +44,134 @@
     </div>
 </div>
 <div id="block1" class="block1">
-    <p style="font-size: 30px;font-weight: 600;float: right;margin-right: 30vw">Сопровождение тендеров
+    <p class="accompaniment" >Сопровождение тендеров
         с оплатой за выигрыш</p>
-    <p>По предоплатной системе с вознаграждением
-        от 0,5% до 2% суммы выигранного контракта</p>
-    <img src="../images/100%25.png">
-    <p>Гарантия допуска
-        к участию в торгах</p>
-    <img src="../images/30min.png">
-    <p>Срочная подготовка
-        заявки</p>
-    <img src="../images/map.png">
-    <p>Работаем
-        по всей России</p>
-    <img src="../images/buttonGreen.png">
+    <p class="remuneration" >По предоплатной системе с вознаграждением
+        от <span style="color: #9BD341">0,5% до 2%</span> суммы выигранного контракта</p>
+    <div class="pros">
+        <img src="../images/100%25.png">
+        <p>Гарантия допуска
+            к участию в торгах</p>
+        <img src="../images/30min.png">
+        <p>Срочная подготовка
+            заявки</p>
+        <img src="../images/map.png">
+        <p>Работаем
+            по всей России</p>
+    </div>
+    <button class="application" ng-click="clickToOpen()">Оставить заявку</button>
 
-    <p>Оставьте заявку до 30 июня 2016 и получите
-        электронную подпсиь со скидкой 10%</p>
+    <p class="condition">*Оставьте заявку до 30 июня 2016 и получите
+            электронную подпсиь со скидкой 10%</p>
+
 </div>
 <div id="block2" class="row">
     <div class="myCustomers col-lg-4 col-xs-4 col-md-4">
-        <p>Наши</p>
-        <p>Заказчики</p>
+        <p >Наши
+        Заказчики</p>
     </div>
 
     <div class="myCustomersLogo col-lg-8 col-xs-8 col-md-8">
-        <div class="row clientLogo" >
-            <div class="col-lg-3 col-xs-3 col-md-3"><div class="logo1 "></div> </div>
-            <div class="col-lg-3 col-xs-3 col-md-3"><div class="logo2 "></div> </div>
-            <div class="col-lg-3 col-xs-3 col-md-3"><div class="logo3 "></div> </div>
-            <div class="col-lg-3 col-xs-3 col-md-3"><div class="logo4 "></div> </div>
+        <div class=" clientLogo" style="margin-top: 3px" >
+            <div class="whiteBlock"><div class="logo1 "></div> </div>
+            <div class="grewBlock"><div class="logo2 "></div> </div>
+            <div class="whiteBlock"><div class="logo3 "></div> </div>
+            <div class="grewBlock"><div class="logo4 "></div> </div>
         </div>
-        <div class="row clientLogo">
-            <div class="col-lg-3 col-xs-3 col-md-3"> <div class="logo5"></div>  </div>
-            <div class="col-lg-3 col-xs-3 col-md-3"> <div class="logo6"></div>  </div>
-            <div class="col-lg-3 col-xs-3 col-md-3"> <div class="logo7"></div>  </div>
-            <div class="col-lg-3 col-xs-3 col-md-3"> <div class="logo8"></div>  </div>
+        <img src="../images/ringArrow.png" style="position: absolute;margin-left: 41vw;margin-top: -1.8vw">
+        <div class="clientLogo">
+            <div class="grewBlock"> <div class="logo5"></div>  </div>
+            <div class="whiteBlock"> <div class="logo6"></div>  </div>
+            <div class="grewBlock"> <div class="logo7"></div>  </div>
+            <div class="whiteBlock"> <div class="logo8"></div>  </div>
         </div>
     </div>
 </div>
 <div id="block3">
-    <p style="font-size: 30px;font-weight: 600;float: right;margin-right: 30vw">Преимущества участия в закупках</p>
-    <img src="../images/Shape.png">
-    <p>Количество
-        заказчиков</p>
-    <img src="../images/Shape.png">
-    <p>Объем закупок
-        в 2016г.</p>
-    <img src="../images/Shape.png">
-    <p>Средние снижение
-        на торгах</p>
+    <p style="padding-top:2.5vw;
+     font-size: 2.5vw;
+    font-weight: 600;
+    color: white;
+    margin-left: calc(50% - 19vw);
+    font-family: Exo2SemiBoldCondensed;
+    width: 38vw;" align="center">Преимущества участия в закупках</p>
+    <div class="contGreenRing">
+        <div class="greenRing"><p align="center" class="textInRing">330 000+</p></div>
+        <div class="greenRing"><p align="center" class="textInRing">230 трлн.р</p></div>
+        <div class="greenRing"><p align="center" class="textInRing">7%</p></div>
+        <p>Количество
+            заказчиков</p>
+        <p>Объем закупок
+            в 2016г.</p>
+        <p>Средние снижение
+            на торгах</p>
+    </div>
 </div>
 <div id="block4">
     <div class="line1 row">
         <div class="orders col-lg-6 col-xs-6 col-md-6">
-            <img src="../images/book.png">
-            <p>Готовые
-                заказы</p>
-            <p>Заказы уже размещены,
-                не нужно тратиться
-                на рекламу и искать
-                клиентов</p>
+            <div class="centerCont">
+                <img src="../images/book.png">
+                <div class="centerContText">
+                    <p>Готовые
+                        заказы</p>
+                    <p>Заказы уже размещены,
+                        не нужно тратиться
+                        на рекламу и искать
+                        клиентов</p>
+                </div>
+             </div>
         </div>
         <div class="payment col-lg-6 col-xs-6 col-md-6">
-            <img src="../images/rub.png">
-            <p>Гарантия
-                оплаты</p>
-            <p>Заказчики - организации
-                с государсвтенным
-                участием, что гарантирует
-                оплату по договору в срок</p>
+            <div class="centerCont">
+                <img src="../images/rub.png">
+                <div class="centerContText">
+                    <p>Гарантия
+                        оплаты</p>
+                    <p>Заказчики - организации
+                        с государсвтенным
+                        участием, что гарантирует
+                        оплату по договору в срок</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="line2 row">
-        <div class="conditions col-lg-6 col-xs-6 col-md-6">
-            <img src="../images/glob.png">
-            <p>Широкая
-                география</p>
-            <p>Возможность участия
-                в тендерах по всей стране.
-                Подача заявки и подписание
-                контракта осуществляется
-                в электронном виде</p>
+        <div class="conditions col-lg-6 col-xs-6 col-md-6">\
+            <div class="centerCont">
+                <img src="../images/glob.png">
+                <div class="centerContText">
+                    <p>Широкая
+                        география</p>
+                    <p>Возможность участия
+                        в тендерах по всей стране.
+                        Подача заявки и подписание
+                        контракта осуществляется
+                        в электронном виде</p>
+                </div>
+            </div>
 
         </div>
         <div class="geography col-lg-6 col-xs-6 col-md-6">
-            <img src="../images/hammer.png">
-            <p>Равные
-                условия</p>
-            <p>Любая российская компания
-                или ИП имеет право
-                участвовать в тограх
-                на равных условия</p>
+            <div class="centerCont">
+                <img src="../images/hammer.png">
+                <div class="centerContText">
+                    <p>Равные
+                        условия</p>
+                    <p>Любая российская компания
+                        или ИП имеет право
+                        участвовать в тограх
+                        на равных условия</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div id="block5">
     <p>Оцените свои шансы на победу в тендере</p>
-    <p>Мы бесплатно проанализируем информацию об отыгранных тендерах
+    <p align="center">Мы бесплатно проанализируем информацию об отыгранных тендерах
         по Вашей тематике за последние полгода</p>
-    <img src="../images/buttonGreen.png">
+    <button class="application" ng-click="clickToOpen()">Оценить шансы</button>
 </div>
 <div id="block6" class="row">
         <div class="whatInc col-lg-4 col-xs-4 col-md-4">
@@ -154,13 +182,33 @@
         <div class="prev col-lg-5 col-xs-5 col-md-5">
 
         </div>
-        <div class="next col-lg-3 col-xs-3 col-md-3"></div>
+        <div class="next col-lg-3 col-xs-3 col-md-3">
+            <p>02</p>
+        </div>
 </div>
-<div id="block7"></div>
+<div id="block7">
+    <p>Сопровождение в <span style="color: #A4E045">1</span> тендере от <span style="color: #A4E045">3000 р</span></p>
+    <p>Рассчитайте стоимость сопровождения интересующего
+        Вас тендера</p>
+
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="input-group" style="width: 31vw;margin-left: calc(50% + 7.5vw);margin-top: 3vw">
+                <input type="text" class="form-control"  placeholder="Номер тендера или ссылка" style="    height: 4vw;
+    border-bottom-left-radius: 36px; border-top-left-radius:36px">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="height: 4vw;border: none;
+    outline: none;
+    width: 12vw; border-bottom-right-radius: 36px; border-top-right-radius:36px;background-color: #A4E045;color: #ffffff;font-size: 1vw">Рассчтать</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="block8" class="row">
     <div class="selectSlide col-lg-6 col-xs-6 col-md-6">
-        <rzslider rz-slider-model="slider.minValue"
-                  rz-slider-high="slider.maxValue"
+        <rzslider rz-slider-model="slider.value"
                   rz-slider-options="slider.options"></rzslider>
     </div>
     <div class="result col-lg-6 col-xs-6 col-md-6"></div>

@@ -2,7 +2,8 @@
 
 angular.module('appCTender', [
     'ui.router',
-    'rzModule'
+    'rzModule',
+    'ngDialog'
 ]).config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/');
