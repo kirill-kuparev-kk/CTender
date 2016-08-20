@@ -166,10 +166,11 @@ body{
     float: right;
     margin-top: 2.6vw;
     margin-left: 51.5vw;
-    margin-right: 15.2vw;
+    margin-right: 14.2vw;
 }
 #block1 .pros img{
     display: inline-block;
+    width: 3.2vw;
 }
 #block1 .pros p{
     color: #ffffff;
@@ -202,6 +203,7 @@ body{
     margin-right: 25vw;
     font-size: 0.7vw;
     margin-top: 2vw;
+    margin-bottom: 0;
 }
 
 #block2{
@@ -251,7 +253,7 @@ body{
     background-image: url("../images/clogos_01_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width:99px ;
+    width:6vw ;
     height: 44px;
     margin: auto;
     margin-top: 4vw;
@@ -260,7 +262,7 @@ body{
     background-image: url("../images/clogos_02_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 103px ;
+    width: 6vw ;
     height: 66px;
     margin: auto;
     margin-top: 3vw;
@@ -269,7 +271,7 @@ body{
     background-image: url("../images/clogos_03_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 130px;
+    width: 6vw;
     height: 75px;
     margin: auto;
     margin-top: 3vw;
@@ -278,8 +280,8 @@ body{
     background-image: url("../images/clogos_04_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 103px;
-    height: 71px;
+    width: 6vw;
+    height: 6vw;
     margin: auto;
     margin-top: 3vw;
 }
@@ -287,7 +289,7 @@ body{
     background-image: url("../images/clogos_05_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 120px;
+    width: 6vw;
     height: 74px;
     margin: auto;
     margin-top: 3vw;
@@ -297,8 +299,8 @@ body{
     background-image: url("../images/clogos_06_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 81px;
-    height: 106px;
+    width: 6vw;
+    height: 8vw;
     margin: auto;
     margin-top: 2vw;
 }
@@ -306,7 +308,7 @@ body{
     background-image: url("../images/clogos_07_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 134px;
+    width: 6vw;
     height: 32px;
     margin: auto;
     margin-top: 4vw;
@@ -315,63 +317,63 @@ body{
     background-image: url("../images/clogos_08_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 128px;
+    width: 6vw;
     height: 48px;
     margin: auto;
     margin-top: 4vw;
 }
 #block2 .myCustomersLogo  .logo1:hover{
     background-image: url("../images/clogos_01.png");
-    width:99px ;
+    width:6vw ;
     height: 44px;
     margin: auto;
     margin-top: 4vw;
 }
 #block2 .myCustomersLogo  .logo2:hover{
     background-image: url("../images/clogos_02.png");
-    width: 103px ;
+    width: 6vw ;
     height: 66px;
     margin: auto;
     margin-top: 3vw;
 }
 #block2 .myCustomersLogo  .logo3:hover{
     background-image: url("../images/clogos_03.png");
-    width: 130px;
+    width: 6vw;
     height: 75px;
     margin: auto;
     margin-top: 3vw;
 }
 #block2 .myCustomersLogo  .logo4:hover{
     background-image: url("../images/clogos_04.png");
-    width: 103px;
-    height: 71px;
+    width: 6vw;
+    height: 6vw;
     margin: auto;
     margin-top: 3vw;
 }
 #block2 .myCustomersLogo  .logo5:hover{
     background-image: url("../images/clogos_05.png");
-    width: 120px;
+    width: 6vw;
     height: 74px;
     margin: auto;
     margin-top: 3vw;
 }
 #block2 .myCustomersLogo  .logo6:hover{
     background-image: url("../images/clogos_06.png");
-    width: 81px;
-    height: 106px;
+    width: 6vw;
+    height: 8vw;
     margin: auto;
     margin-top: 2vw;
 }
 #block2 .myCustomersLogo  .logo7:hover{
     background-image: url("../images/clogos_07.png");
-    width: 134px;
+    width:6vw ;
     height: 32px;
     margin: auto;
     margin-top: 4vw;
 }
 #block2 .myCustomersLogo  .logo8:hover{
     background-image: url("../images/clogos_08.png");
-    width: 128px;
+    width: 6vw;
     height: 48px;
     margin: auto;
     margin-top: 4vw;
@@ -583,6 +585,14 @@ body{
     height: 36vw;
     background-repeat: no-repeat;
 }
+
+#block9 .smallGreenRing{
+    border: 2px solid #9FC849 ;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    display: inline-block;
+}
 #block10{
     width: 100%;
     height: 36vw;
@@ -594,6 +604,51 @@ body{
 #block10 .reviews{
 
 }
-#block11{}
-#block12{}
-#footer{}
+#block11{
+    width: 100%;
+    height: 36vw;
+}
+#block12{
+    width: 100%;
+    height: 36vw;
+    background-color: #00B6E1;
+}
+
+#block12 .map{
+    height: 100%;
+    background-image: url("../images/map.jpg");
+    width: 943px;
+    background-size: 100%;
+
+}
+#footer{
+    height:193px;
+    padding-top:40px
+}
+
+#footer .logoText{
+    font-size: 12px;
+    display: inline-block;
+    line-height: 4px;
+    margin-left: 3px;
+    margin-top: 20px;
+    vertical-align: bottom
+}
+#footer .info{
+    width: 80%;
+    margin: auto;
+    height: 87px;
+}
+
+#footer .number{
+    float: right;
+}
+#footer .numberNum{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+#footer .logo{
+    float: left;
+}
