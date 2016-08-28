@@ -5,16 +5,16 @@ angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog) {
         options: {
             showTicksValues: true,
             stepsArray: [
-                {value: 6, legend: 'Very poor'},
-                {value: 8, legend: 'Fair'},
-                {value: 10, legend: 'Average'},
-                {value: 12, legend: 'Good'},
-                {value: 14, legend: 'Excellent'},
-                {value: 16, legend: 'Average'},
-                {value: 18, legend: 'Good'},
-                {value: 20, legend: 'Excellent'},
-                {value: 22, legend: 'Good'},
-                {value: 24, legend: 'Excellent'}
+                {value: 6},
+                {value: 8},
+                {value: 10},
+                {value: 12},
+                {value: 14},
+                {value: 16},
+                {value: 18},
+                {value: 20},
+                {value: 22},
+                {value: 24}
             ]
         }
     };

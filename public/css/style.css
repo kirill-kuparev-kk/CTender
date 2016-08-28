@@ -75,8 +75,8 @@ body{
 }
 
 #header{
-    height:193px;
-    padding-top:40px
+    height:134px;
+    padding-top:20px
 }
 
 #header .logoText{
@@ -85,7 +85,7 @@ body{
     line-height: 4px;
     margin-left: 3px;
     margin-top: 20px;
-    vertical-align: bottom
+    vertical-align: top
 }
 #header .info{
     width: 80%;
@@ -106,7 +106,7 @@ body{
     float: left;
 }
 #header .menu{
-    width: 85%;
+    width: 1000px;
     margin: auto;
 }
 
@@ -119,7 +119,7 @@ body{
 }
 #header .menu div {
     display: inline-block;
-    margin-right: 6.7%;
+    margin-right: 47px;
 }
 #header .menu div:nth-child(6) {
     margin-right: 0;
@@ -130,114 +130,120 @@ body{
     font-size: 11px;
 }
 
-
+.blocks
+{   margin: auto;
+    width: 1200px;
+    min-width: 1200px;
+}
 #block1{
     background-image: url("../images/bgScreen1.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 40vw;
+    height: 500px;
     background-repeat: no-repeat;
 
 }
 #block1 .accompaniment{
-    font-size: 3vw;
+    font-size: 41px;
     font-weight: 600;
     float: right;
-    margin-top: 6vw;
-    margin-left: 52vw;
-    line-height: 57px;
-    margin-right: 15vw;
+    margin-top: 90px;
+    margin-left: 613px;
+    line-height: 38px;
+    margin-right: 151px;
     font-family: Exo2SemiBoldCondensed;
     color: #ffffff;
 }
 
 #block1 .remuneration{
     font-family: Exo2Regular;
-    font-size: 1.1vw;
+    font-size: 15px;
     float: right;
-    line-height: 1.2vw;
-    margin-top: 1vw;
-    margin-left: 52vw;
-    margin-right: 22vw;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-left: 612px;
+    margin-right: 250px;
     color: #ffffff;
 }
 
 #block1 .pros{
     float: right;
-    margin-top: 2.6vw;
-    margin-left: 51.5vw;
-    margin-right: 14.2vw;
+    margin-top: 34px;
+    margin-left: 593px;
+    margin-right: 137px;
 }
 #block1 .pros img{
     display: inline-block;
-    width: 3.2vw;
+    width: 48px;
 }
 #block1 .pros p{
     color: #ffffff;
     display: inline-block;
-    width: 7vw;
-    font-size: 0.8vw;
+    width: 96px;
+    font-size: 9px;
     vertical-align: middle;
 }
 #block1 .application{
     border: none;
     background-color: #A4E045;
-    width: 21vw;
-    height: 4vw;
-    font-size: 1.2vw;
+    width: 289px;
+    height: 54px;
+    font-size: 16px;
     float: right;
-    margin-right: 26vw;
+    margin-right: 299px;
     outline: none;
     box-shadow: 2px 1px 50px 8px #A4E045;
     border-radius: 60px;
-    margin-top: 3.4vw;
+    margin-top: 46px;
     color: #ffffff;
-    margin-left: 52vw;
+    margin-left: 578px;
 
 }
 
 #block1 .condition{
     color: #ffffff;
     float: right;
-    margin-left: 55vw;
-    margin-right: 25vw;
-    font-size: 0.7vw;
-    margin-top: 2vw;
+    margin-left: 653px;
+    margin-right: 296px;
+    font-size: 10px;
+    margin-top: 29px;
     margin-bottom: 0;
 }
 
 #block2{
-    height: 22vw;
+    height: 297px;
     width: 100%
 }
 
 #block2 .myCustomers{
     height: 100%;
     background-color:#00B8DC ;
+    width: 439px;
+    display: inline-block;
 }
 #block2 .myCustomers p{
     color: #ffffff;
     font-family: Exo2SemiBoldCondensed;
     float: right;
-    font-size: 2.3vw;
-    margin-right: 6vw;
-    margin-left: 13vw;
-    margin-top: 7.3vw;
-    line-height: 3vw;
+    font-size: 34px;
+    margin-right: 82px;
+    margin-left: 161px;
+    margin-top: 108px;
+    line-height: 38px;
 }
 #block2 .grewBlock{
     margin: 0;
     padding: 0;
     background-color: #ECECEC;
-    width: 10.7vw;
-    height: 10.7vw;
+    width: 142px;
+    height: 142px;
     display: inline-block;
     outline: solid #ECECEC;
 }
 #block2 .whiteBlock{
     background-color: #ffffff;
-    width: 10.7vw;
-    height: 10.7vw;
+    width: 142px;
+    height: 142px;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -247,197 +253,323 @@ body{
 #block2 .myCustomersLogo{
     margin: 0;
     padding: 0!important;
+    background-color: #ffffff;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #block2 .myCustomersLogo  .logo1{
     background-image: url("../images/clogos_01_bw.png");
     background-repeat:no-repeat ;
-    background-size: 100%;
-    width:6vw ;
+    width: 99px;
     height: 44px;
     margin: auto;
-    margin-top: 4vw;
+    margin-top: 55px;
 }
 #block2 .myCustomersLogo  .logo2{
     background-image: url("../images/clogos_02_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw ;
+    width: 76px ;
     height: 66px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 41px;
 }
 #block2 .myCustomersLogo  .logo3{
     background-image: url("../images/clogos_03_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw;
+    width: 90px;
     height: 75px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 44px;
 }
 #block2 .myCustomersLogo  .logo4{
     background-image: url("../images/clogos_04_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw;
-    height: 6vw;
+    width: 90px;
+    height: 90px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 45px;
 }
 #block2 .myCustomersLogo  .logo5{
     background-image: url("../images/clogos_05_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw;
+    width: 90px;
     height: 74px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 45px;
 
 }
 #block2 .myCustomersLogo  .logo6{
     background-image: url("../images/clogos_06_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw;
-    height: 8vw;
+    width: 70px;
+    height: 120px;
     margin: auto;
-    margin-top: 2vw;
+    margin-top: 30px;
 }
 #block2 .myCustomersLogo  .logo7{
     background-image: url("../images/clogos_07_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw;
+    width: 90px;
     height: 32px;
     margin: auto;
-    margin-top: 4vw;
+    margin-top: 62px;
 }
 #block2 .myCustomersLogo  .logo8{
     background-image: url("../images/clogos_08_bw.png");
     background-repeat:no-repeat ;
     background-size: 100%;
-    width: 6vw;
+    width: 90px;
     height: 48px;
     margin: auto;
-    margin-top: 4vw;
+    margin-top: 55px;
 }
 #block2 .myCustomersLogo  .logo1:hover{
     background-image: url("../images/clogos_01.png");
-    width:6vw ;
+    background-repeat:no-repeat ;
+    width: 99px;
     height: 44px;
     margin: auto;
-    margin-top: 4vw;
+    margin-top: 55px;
 }
 #block2 .myCustomersLogo  .logo2:hover{
     background-image: url("../images/clogos_02.png");
-    width: 6vw ;
+    width: 76px ;
     height: 66px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 41px;
 }
 #block2 .myCustomersLogo  .logo3:hover{
     background-image: url("../images/clogos_03.png");
-    width: 6vw;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
     height: 75px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 44px;
 }
 #block2 .myCustomersLogo  .logo4:hover{
     background-image: url("../images/clogos_04.png");
-    width: 6vw;
-    height: 6vw;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 90px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 45px;
 }
 #block2 .myCustomersLogo  .logo5:hover{
     background-image: url("../images/clogos_05.png");
-    width: 6vw;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
     height: 74px;
     margin: auto;
-    margin-top: 3vw;
+    margin-top: 45px;
+
 }
 #block2 .myCustomersLogo  .logo6:hover{
     background-image: url("../images/clogos_06.png");
-    width: 6vw;
-    height: 8vw;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 70px;
+    height: 120px;
     margin: auto;
-    margin-top: 2vw;
+    margin-top: 30px;
 }
 #block2 .myCustomersLogo  .logo7:hover{
     background-image: url("../images/clogos_07.png");
-    width:6vw ;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
     height: 32px;
     margin: auto;
-    margin-top: 4vw;
+    margin-top: 62px;
 }
 #block2 .myCustomersLogo  .logo8:hover{
     background-image: url("../images/clogos_08.png");
-    width: 6vw;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
     height: 48px;
     margin: auto;
-    margin-top: 4vw;
+    margin-top: 55px;
 }
-
+.ringArrow{
+    position: absolute;
+    margin-left: 536px;
+    margin-top: -34px;
+}
 
 #block3{
     background-image: url("../images/bgScreen2.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 33.5vw;
+    height: 425px;
     background-repeat: no-repeat;
 }
 
-#block3 .contGreenRing{
-    width: 63vw;
-    margin: auto;
-    padding-top: 4vw;
+#block3 .title{
+    padding-top: 39px;
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    margin-left: calc(50% - 235px);
+    font-family: Exo2SemiBoldCondensed;
+    width: 493px;
 }
 
+
+
+#block3 .contGreenRing{
+    width: 776px;
+    margin: auto;
+    padding-top: 54px;
+}
+
+#block3 .subTitle{
+    color: #ffffff;
+    margin-right: 141px;
+    display: inline-block;
+    margin-top: 13px;
+    width: 144px;
+    margin-left: 15px;
+
+}
+
+#block3 .subTitleLast{
+    color: #ffffff;
+    margin-right: 0px;
+    display: inline-block;
+    margin-top: 13px;
+    width: 144px;
+
+}
+
+
+
 #block3 .contGreenRing div:nth-child(1){
-   margin-right: 9vw;
+   margin-right: 118px;
 }
 #block3 .contGreenRing div:nth-child(2){
-   margin-right: 9vw;
+   margin-right: 118px;
 }
 
 #block3 .greenRing{
     display: inline-block;
     background-color: rgba( 255, 0, 0, 0);
     border-radius: 50%;
-    width: 12vw;
-    height: 12vw;
+    width: 175px;
+    height: 175px;
     border: 3px solid #A4E045;
 }
 #block3 .textInRing{
     color: #ffffff;
-    font-size: 2vw;
-    margin-top: 4.5vw;
+    font-size: 34px;
+    margin-top: 63px;
+    font-weight: 100;
 }
 
 #block4{
     width: 100%;
-    height: 52vw;
+    height: 718px;
+}
+#block4 .subTitle{
+    font-size: 18px;
+    margin-bottom: 5px;
+    width: 85px;
+    line-height: 22px;
 }
 
-#block4 .centerCont{
-    width: 21vw;
-    margin: auto;
-    margin-top: 9vw;
+#block4 .orders .centerCont{
+    width: 264px;
+    margin-top: 116px;
+    margin-left: 222px
 }
 
-#block4 .centerCont img{
+#block4 .orders .centerCont img{
     display: inline-block;
-    width: 6vw;
+    width: 81px;
 }
 
-#block4 .centerCont .centerContText{
+#block4 .orders .centerCont .centerContText{
     display: inline-block;
     color: #ffffff;
-    vertical-align: middle;
-    width: 11vw;
-    margin-left: 2vw;
+    width: 141px;
+    font-size: 12px;
+    margin-top: -1px;
+    vertical-align: top;
+    margin-left: 35px;
+}
 
+#block4 .payment .centerCont{
+    width: 283px;
+    margin-top: 116px;
+    margin-left: 85px;
+}
+
+#block4 .payment .centerCont img{
+    display: inline-block;
+    width: 90px;
+    margin-top: 12px;
+}
+
+#block4 .payment .centerCont .centerContText{
+    display: inline-block;
+    color: #ffffff;
+    width: 154px;
+    font-size: 12px;
+    margin-top: -1px;
+    vertical-align: top;
+    margin-left: 35px;
+}
+#block4 .conditions .centerCont{
+    width: 313px;
+    margin-top: 116px;
+    margin-left: 100px
+}
+
+#block4 .conditions .centerCont img{
+    display: inline-block;
+    width: 98px;
+    margin-top: 7px;
+}
+
+#block4 .conditions .centerCont .centerContText{
+    display: inline-block;
+    color: #ffffff;
+    width: 172px;
+    font-size: 12px;
+    margin-top: -1px;
+    vertical-align: top;
+    margin-left: 35px;
+}
+#block4 .geography .centerCont{
+    width: 300px;
+    margin-top: 116px;
+    margin-left: 222px
+}
+
+#block4 .geography .centerCont img{
+    display: inline-block;
+    width: 91px;
+    margin-top: 10px;
+}
+
+#block4 .geography .centerCont .centerContText{
+    display: inline-block;
+    color: #ffffff;
+    width: 164px;
+    font-size: 12px;
+    margin-top: -1px;
+    vertical-align: top;
+    margin-left: 35px;
 }
 
 
@@ -456,11 +588,11 @@ body{
     background-color:#1BD5EB;
     height: 100%;
 }
-#block4 .conditions{
+#block4 .geography{
     background-color:#1BD5EB;
     height: 100%;
 }
-#block4 .geography{
+#block4  .conditions{
     background-color:#00B8DC;
     height: 100%;
 }
@@ -469,46 +601,46 @@ body{
     background-image: url("../images/bgScreen3.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 33.5vw;
+    height: 425px;
     background-repeat: no-repeat;
 }
-#block5 p:nth-child(1){
+#block5 .title{
     color: #ffffff;
     font-family: Exo2SemiBoldCondensed;
     margin: auto;
-    font-size: 3vw;
-    width: 50vw;
-    padding-top: 9.3vw;
-    line-height: 3vw;
+    font-size: 41px;
+    width: 673px;
+    padding-top: 129px;
+    line-height: 42px;
 }
 
-#block5 p:nth-child(2){
+#block5 .subTitle{
     color: #ffffff;
     font-family: Exo2Regular;
     margin: auto;
-    font-size: 1vw;
-    width: 34vw;
-    padding-top: 1.5vw;
-    line-height: 1.3vw;
+    font-size: 15px;
+    width: 522px;
+    padding-top: 21px;
+    line-height: 18px;
 }
 
 #block5 .application{
     border: none;
     background-color: #A4E045;
-    width: 21vw;
-    height: 4vw;
-    font-size: 1.2vw;
-    margin-left: calc(50% - 10.5vw);
+    width: 290px;
+    height: 57px;
+    font-size: 16px;
     outline: none;
     box-shadow: 2px 1px 50px 8px #A4E045;
     border-radius: 60px;
-    margin-top: 3.4vw;
+    margin-top: 47px;
     color: #ffffff;
+    margin-left:calc(50% - 145px);
     }
 
 #block6{
     width: 100%;
-    height: 21.5vw;
+    height: 300px;
 }
 #block6 .whatInc{
     background-color:#00B8DC ;
@@ -518,11 +650,11 @@ body{
     color: #ffffff;
     font-family: Exo2SemiBoldCondensed;
     float: right;
-    font-size: 2.3vw;
-    margin-right: 6vw;
-    margin-left: 13vw;
-    margin-top: 5.9vw;
-    line-height: 3vw;
+    font-size: 35px;
+    margin-right: 6px;
+    margin-left: 155px;
+    margin-top: 86px;
+    line-height: 39px;
 }
 #block6 .prev{
 
@@ -547,28 +679,55 @@ body{
     background-repeat: no-repeat;
 }
 
-#block7 p:nth-child(1){
+#block7 .title{
     color: #ffffff;
     font-family: Exo2SemiBoldCondensed;
     margin: auto;
-    font-size: 3vw;
-    width: 50vw;
-    padding-top: 9.3vw;
-    line-height: 3vw;
+    font-size: 42px;
+    width: 625px;
+    padding-top: 128px;
+    line-height: 42px;
 }
 
-#block7 p:nth-child(2){
+#block7 .subTitle{
     color: #ffffff;
     font-family: Exo2Regular;
     margin: auto;
-    font-size: 1vw;
-    width: 34vw;
-    padding-top: 1.5vw;
-    line-height: 1.3vw;
+    font-size: 16px;
+    width: 402px;
+    padding-top: 20px;
+    line-height: 17px;
+}
+
+#block7 .check{
+    height: 56px;
+    border: none;
+    outline: none;
+    width: 175px;
+    border-bottom-right-radius: 36px;
+    border-top-right-radius: 36px;
+    background-color: #A4E045;
+    color: #ffffff;
+    font-size: 18px;
 }
 #block8{
     width: 100%;
-    height: 36vw;
+    height: 455px;
+}
+#block8 .title{
+    font-family: Exo2SemiBoldCondensed;
+    font-size: 35px;
+    width: 312px;
+    padding-top: 77px;
+    line-height: 40px;
+    margin-left: 144px;
+}
+#block8 .subTitle{
+    font-family: Exo2Regular;
+    width: 300px;
+    margin-left: 146px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 #block8 .selectSlide{
 
@@ -577,6 +736,30 @@ body{
 #block8 .result{
     background-color: #00B8DC;
     height: 100%;
+}
+
+#block8 .resultRing{
+    width: 225px;
+    height: 225px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    margin-left: 110px;
+    padding: 20px;
+    margin-top: 56px;
+}
+
+#block8 .application{
+    border: none;
+    background-color: #A4E045;
+    width: 289px;
+    height: 54px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 2px 1px 50px 8px #A4E045;
+    border-radius: 60px;
+    margin-top: 46px;
+    color: #ffffff;
+    margin-left: 78px;
 }
 #block9{
     background-image: url("../images/bgScreen5.jpg");
@@ -592,6 +775,13 @@ body{
     height: 7vw;
     border-radius: 50%;
     display: inline-block;
+}
+.rzslider .rz-pointer {
+    outline: none;
+}
+.rzslider{
+    width: 70%!important;
+    margin-left: 150px!important;
 }
 #block10{
     width: 100%;
