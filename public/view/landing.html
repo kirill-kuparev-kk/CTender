@@ -24,7 +24,7 @@
         </div>
         <div >
             <img src="../images/select.png">
-            <p align="center">ПРЕИМУЩЕСТВА УЧАСТИЯ</p>
+            <p align="center" ><a  href="/#/block3">ПРЕИМУЩЕСТВА УЧАСТИЯ</a></p>
         </div>
         <div >
             <img src="../images/select.png">
@@ -89,7 +89,8 @@
             </div>
         </div>
     </div>
-    <div id="block3">
+    <div id="block3" >
+        <a  name="top" ></a>
         <p class="title">Преимущества участия в закупках</p>
         <div class="contGreenRing">
             <div class="greenRing"><p align="center" class="textInRing">330 000+</p></div>
@@ -194,7 +195,7 @@
                     <input type="text" class="form-control"  placeholder="Номер тендера или ссылка" style="    height: 56px;
         border-bottom-left-radius: 36px; border-top-left-radius:36px">
                     <span class="input-group-btn">
-                        <button class="btn btn-default check" type="button" >Рассчтать</button>
+                        <button class="btn btn-default check" type="button" ng-click="clickToOpen()">Рассчтать</button>
                     </span>
                 </div>
 
@@ -210,11 +211,8 @@
         </div>
         <div class="result col-lg-6 col-xs-6 col-md-6">
             <div  class="resultRing">
-                <p align="center" style="color: #ffffff;font-size: 22px;margin-bottom: 0">Итого:</p>
-                <p style="color: #A4E045;
-    font-size: 37px;
-    font-weight: 600;
-    margin-top: -9px;" align="center">70 000 р</p>
+                <p align="center" class="total">Итого:</p>
+                <p  class="resultNumber" align="center">70 000 р</p>
                 <p align="center" style="color: #ffffff;
     font-size: 16px;margin-bottom: 0"><span style="color: #A4E045">-</span> от <span style="color: #A4E045">0,5%</span> до <span style="color: #A4E045">2%</span> суммы выигранного контракта*</p>
                 <p align="center"  style="font-size: 9px;
@@ -222,30 +220,72 @@
     margin-left: 11px;
     color: white;">*из депозита списываются проценты за победу</p>
             </div>
-            <button class="application"> Заказать сопровождение</button>
+            <button class="application" ng-click="clickToOpen()"> Заказать сопровождение</button>
         </div>
     </div>
     <div id="block9">
-        <p style="padding-top:2.5vw;
-         font-size: 2.5vw;
-        font-weight: 600;
-        color: white;
-        margin-left: calc(50% - 19vw);
-        font-family: Exo2SemiBoldCondensed;
-        width: 38vw;" align="center">Наши преимушества</p>
-        <div style="width:30vw;margin: auto ">
-            <div class="smallGreenRing"></div>
-            <div class="smallGreenRing"></div>
-            <div class="smallGreenRing"></div>
+        <p style="    padding-top: 43px;
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    margin-left: calc(50% - 247px);
+    font-family: Exo2SemiBoldCondensed;
+    width: 493px;" align="center">Наши преимушества</p>
+        <div style="width:685px;margin: auto ">
+            <img src="../images/infin.png" class="inf">
+            <img src="../images/text.png" class="num">
+            <img src="../images/smallBook.png" class="book">
         </div>
-        <div style="width:20vw;margin: auto ">
-            <div class="smallGreenRing"></div>
-            <div class="smallGreenRing"></div>
+        <div class="text1row">
+            <p>Сопровождение в неограниченном <br>кол-ве тендеров</p>
+            <p>Участие как в государственных (44-ФЗ),<br>так и в коммерческих (223-ФЗ) торгах</p>
+            <p>Подготовка заявки в полном объеме, включал техническую часть</p>
+        </div>
+
+        <div style="width:395px;margin: auto;margin-top: -30px ">
+            <img src="../images/check.png" class="check">
+            <img src="../images/find.png" class="find">
+        </div>
+        <div class="text2row">
+            <p>Выборка тендеров вручную: получайте заказы, соответствующие Вашим критериям</p>
+            <p>Анализ документации и проверка репутации Заказчика</p>
         </div>
     </div>
     <div id="block10" class="row">
-        <div class="history col-lg-6 col-xs-6 col-md-6"></div>
-        <div class="reviews col-lg-6 col-xs-6 col-md-6"></div>
+        <div class="history col-lg-6 col-xs-6 col-md-6">
+            <p class="title">Истории успеха наших клиентов</p>
+            <div class="info">
+                <div class="row1">
+                    <p>Участие в тендерах</p>
+                    <p>Выиграно тендеров</p>
+                </div>
+                <div class="row2">
+                    <p>46</p>
+                    <p>31</p>
+                </div>
+                <div class="row3">
+                    <p>Сумма контрактов(р)</p>
+                    <p>Регион участия</p>
+                </div>
+                <div class="row4">
+                    <p>< 8 млн.</p>
+                    <p>Краснодар</p>
+                </div>
+            </div>
+        </div>
+        <div class="reviews col-lg-6 col-xs-6 col-md-6">
+            <img src="../images/arrowNext.png" style="    position: absolute;
+    margin-left: 387px;
+    margin-top: 213px;
+    width: 70px">
+            <div class="avatar">
+                <img src="../images/Andrew.png">
+            </div>
+            <p class="name">Алексей Милованов</p>
+            <p class="work">придпринематель, ООО "Алюнест" тел. 8(918) 450 47 96</p>
+            <p class="title">Решили искать новые рынки получения заказов </p>
+            <p class="text">Заключили договор с «Си тендер» начали работу. Теперь выигрываем торги и получаем новые заказы. Всю работу за тебя делает компания, нам нужно только дать цену, это экономит на сотрудниках и экономит свое время. Оплата только за выигранные тендеры, т. е. выиграл – заплатил, не выиграл – не заплатил )) а по факту получается, что за подготовку тендера платит сам заказчик, так как мы закладываем услуги «Си тендер» в цену контракта))</p>
+        </div>
     </div>
     <div id="block11">
         <div style="height: 305px">
@@ -261,7 +301,26 @@
         </div>
     </div>
     <div id="block12">
-        <div class="map"></div>
+        <div class="map" style="display: inline-block"></div>
+        <div style="display: inline-block;vertical-align: top">
+            <p class="title">Наша география</p>
+            <p class="subTitle">Мы успешно обслуживаем</p>
+            <div style="margin-left: 7px;">
+                <div class="greenRing"><p>200<sup>+</sup></p></div>
+                <div class="greenRing"><p>36</p></div>
+                <div class="greenRing"><p>10</p></div>
+            </div>
+            <div class="greenRingText">
+                <p>Копаний из</p>
+                <p>городов и населенных пунктов в</p>
+                <p>регионах России</p>
+            </div>
+            <div class="procent">
+                <p>92%</p>
+                <p>из них - наши постоянные клиенты</p>
+            </div>
+            <button class="application" ng-click="clickToOpen()">Присоединиться</button>
+        </div>
     </div>
 </div>
 <div id="footer">
