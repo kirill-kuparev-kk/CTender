@@ -122,8 +122,13 @@ body{
     visibility: hidden;
 }
 
+#header .menu div:hover {
+  cursor: pointer;
+}
+
 #header .menu div:hover img{
     visibility: visible;
+    cursor: pointer;
 }
 #header .menu div {
     display: inline-block;
