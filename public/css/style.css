@@ -58,10 +58,10 @@
 input{
     padding-left:1.5vw ;
 }
-::-webkit-input-placeholder {margin-left: 1vw;font-size: 1vw}
-::-moz-placeholder          {margin-left: 1vw;font-size: 1vw}
-:-moz-placeholder           {margin-left: 1vw;font-size: 1vw}
-:-ms-input-placeholder {margin-left: 1vw;font-size: 2vw}
+::-webkit-input-placeholder {margin-left: 20px;font-size: 16px}
+::-moz-placeholder          {margin-left: 20px;font-size: 16px}
+:-moz-placeholder           {margin-left: 20px;font-size: 16px}
+:-ms-input-placeholder {margin-left: 20px;font-size: 16px}
 .ngdialog-modal .ngdialog-content button{
     border: none;
     background-color: #A4E045;
@@ -680,16 +680,16 @@ body{
 
 #block6 .next p{
     color: #ffffff;
-    font-size: 8vw;
-    width: 12vw;
-    margin-top: 5vw;
+    font-size: 132px;
+    width: 300px;
+    margin-top: 62px;
     font-weight: 600;
 }
 #block7{
     background-image: url("../images/bgScreen4.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 36vw;
+    height: 455px;
     background-repeat: no-repeat;
 }
 
