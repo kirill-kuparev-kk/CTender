@@ -659,6 +659,7 @@ body{
 #block6 .whatInc{
     background-color:#00B8DC ;
     height: 100%;
+    width: 439px
 }
 #block6 .whatInc p{
     color: #ffffff;
@@ -670,12 +671,20 @@ body{
     margin-top: 86px;
     line-height: 39px;
 }
-#block6 .prev{
+#block6 .prev,#block6 .whatInc,#block6 .next{
+ display: inline-block;
+    vertical-align: bottom;
 
+}
+
+#block6 .prev{
+    background-color: #ffffff;
+    width: 440px;
 }
 #block6 .next{
     background-color:#00B8DC ;
     height: 100%;
+    width: 313px;
 }
 
 #block6 .next p{
@@ -684,6 +693,8 @@ body{
     width: 300px;
     margin-top: 62px;
     font-weight: 600;
+    margin-left: 34px;
+    font-family: Exo2-SemiBoldCondensed;
 }
 #block7{
     background-image: url("../images/bgScreen4.jpg");
