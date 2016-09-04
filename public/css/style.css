@@ -15,45 +15,66 @@
     font-family: Exo2Light;
     src: url(../fonts/Exo2-Light.ttf);
 }
+.ngdialog-modalDip .ngdialog-content{
+    z-index: 1000;
+    position: absolute;
+    opacity: 1!important;
+    width: 460px;
+    height: 660px;
+    margin-top: 20px;
+    /* background-color: #00B6E1; */
+    border-radius: 20px;
+    margin-left: calc(50% - 230px);
 
+}
+
+.ngdialog-modalDip .ngdialog-content img{
+    width: 100%;
+    height: 100%;
+
+}
 
 .ngdialog-modal .ngdialog-content{
     z-index: 1000;
     position: absolute;
     opacity: 1!important;
-    width: 27vw;
-    height: 34.5vw;
-    margin-top: 9.5vw;
+    width: 400px;
+    height: 500px;
+    margin-top: 60px;
     background-color: #00B6E1;
     border-radius: 20px;
     margin-left: calc(50% - 13vw);
 
 }
 .ngdialog-modal .ngdialog-content p:nth-child(1){
-    margin-top: 3.2vw;
+    margin-top: 43px;
     font-family: Exo2SemiBoldCondensed;
-    color:#ffffff;
-    font-size: 2vw;
+    color: #ffffff;
+    font-size: 28px;
 
 }
 
 .ngdialog-modal .ngdialog-content p:nth-child(2){
     font-family: Exo2Regular;
-    font-size: 1.2vw;
+    font-size: 16px;
     color: #ffffff;
     margin-left: 9.4%;
     margin-right: 9.4%;
-    line-height: 1.2vw;
+    line-height: 17px;
 }
 .ngdialog-modal .ngdialog-content input{
     width: 76%;
     margin-left: 12%;
     border-radius: 36px;
-    height: 4vw;
+    height: 61px;
     outline: none;
-    margin-top: 2vw;
+    margin-top: 27px;
     border: none;
 
+}
+
+.ngdialog-close{
+    display: none;
 }
 input{
     padding-left:1.5vw ;
@@ -66,14 +87,15 @@ input{
     border: none;
     background-color: #A4E045;
     width: 76%;
-    height: 4vw;
-    font-size: 1.2vw;
+    height: 61px;
+    font-size: 17px;
     outline: none;
     box-shadow: 2px 1px 50px 8px #A4E045;
     border-radius: 60px;
-    margin-top: 2.4vw;
+    margin-top: 35px;
     color: #ffffff;
-    margin-left: 12%;}
+    margin-left: 12%;
+  }
 
 body{
     margin: 0;
@@ -671,7 +693,7 @@ body{
     margin-top: 86px;
     line-height: 39px;
 }
-#block6 .prev,#block6 .whatInc,#block6 .next{
+#block6 .prev,#block6 .whatInc,#block6 .nextInfo{
  display: inline-block;
     vertical-align: bottom;
 
@@ -680,21 +702,41 @@ body{
 #block6 .prev{
     background-color: #ffffff;
     width: 440px;
+    height: 300px;
 }
-#block6 .next{
+#block6 .prev .steps{
+    padding: 60px 65px
+}
+
+
+#block6 .prev .steps .title{
+    font-family: Exo2Regular;
+    font-size: 38px;
+    color: #00B8DC;
+    font-weight: 900;
+    margin-top: -14px
+}
+
+#block6 .prev .steps .subTitle{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-top: 14px
+}
+#block6 .nextInfo{
     background-color:#00B8DC ;
     height: 100%;
     width: 313px;
 }
 
-#block6 .next p{
+#block6 .nextInfo p{
     color: #ffffff;
-    font-size: 132px;
+    font-size: 107px;
     width: 300px;
-    margin-top: 62px;
+    margin-top: 68px;
     font-weight: 600;
-    margin-left: 34px;
-    font-family: Exo2-SemiBoldCondensed;
+    margin-left: 40px;
+    font-family: Exo2Regular;
 }
 #block7{
     background-image: url("../images/bgScreen4.jpg");
@@ -947,26 +989,33 @@ body{
 
 #block10 .reviews .title{
     font-family: Exo2SemiBoldCondensed;
-    font-size: 26px;
-    width: 270px;
+    font-size: 24px;
+    width: 430px;
     padding-top: 4px;
-    line-height: 34px;
-    margin-left: 82px;
+    line-height: 28px;
+    margin-left: 65px;
     color: #080808;
 }
+#block10 .reviews {
+    padding: 0;
+    margin-top: -65px;
+}
+#block10 .reviews .carousel {
+    height: 455px;
+}
 #block10 .reviews .avatar img{
-    margin-top: 58px;
+    margin-top: 25px;
     width: 77px;
-    margin-left: 80px;
+    margin-left: 65px;
 }
 #block10 .reviews .name{
     margin-top: 10px;
-    margin-left: 82px;
+    margin-left: 65px;
     font-weight: 600;
 }
 #block10 .reviews .work{
     font-size: 10px;
-    margin-left: 82px;
+    margin-left: 65px;
     width: 186px;
     margin-top: -12px;
     line-height: 13px;
@@ -974,15 +1023,20 @@ body{
 }
 
 #block10 .reviews .text{
-    font-size: 12px;
-    width: 300px;
-    margin-left: 82px;
+    font-size: 13px;
+    width: 430px;
+    margin-left: 65px;
 
 
 }
 #block11{
     width: 100%;
     height: 36vw;
+}
+
+#block11 .item img{
+    display: inline-block;
+    vertical-align: bottom;
 }
 #block12{
     width: 100%;
@@ -1078,6 +1132,29 @@ body{
     line-height: 20px;
     margin-bottom: 20px;
     width: 160px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+.carousel-inner > .item > img{
+    margin-left: 104px;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+    background: none;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 65px;
+}
+
+.carousel-control.left{
+    background: none;
 }
 #footer{
     height:193px;

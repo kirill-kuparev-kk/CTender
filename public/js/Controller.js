@@ -1,7 +1,8 @@
 angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog) {
+    $scope.stepIndex=2;
     $scope.message = 'Hello World!';
     $scope.slider = {
-        value: 5,
+        value: 6,
         options: {
             showTicksValues: true,
             stepsArray: [
@@ -19,8 +20,25 @@ angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog) {
         }
     };
 
+    $scope.stepsNext=function(){
+        if( $scope.stepIndex==10){
+            return $scope.stepIndex=1}
+        $scope.stepIndex= $scope.stepIndex+1
+    }
+    ;$scope.stepsPrev=function(){
+        if( $scope.stepIndex==1){
+            return $scope.stepIndex=10}
+        $scope.stepIndex= $scope.stepIndex-1
+    };
+
+
+  console.log("slid",$scope.slider.value);
     $scope.clickToOpen = function () {
         ngDialog.open({ template: '../view/modal.html', className: 'ngdialog-modal' });
+    };
+
+    $scope.clickToOpenDip = function (dip) {
+        ngDialog.open({ template: '../view/'+dip+'.html', className: 'ngdialog-modalDip' });
     };
 
     $scope.myInterval = 5000;
