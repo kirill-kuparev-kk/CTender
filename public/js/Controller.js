@@ -1,4 +1,4 @@
-angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog) {
+angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog,$timeout) {
     $scope.stepIndex=2;
     $scope.message = 'Hello World!';
     $scope.slider = {
@@ -20,6 +20,52 @@ angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog) {
         }
     };
 
+    $scope.Prevs=[
+        {Title:"01",
+        Subtitle:"Аккредитация на всех необходимых электронных торговых площадках",
+        Text:""
+        }
+        ,{Title:"02",
+        Subtitle:"Ежедневная рассылка «свежих» тендеров по Вашей тематике",
+        Text:"Выборка тендеров производится вручную, поэтому Вы будете получать только те тендеры, которые полностью соответствуют Вашим критериям."
+        }
+        ,{Title:"03",
+        Subtitle:"Подача запросов на разъяснение положений документации",
+        Text:"Если по тендеру возникают вопросы, отправляем Заказчику запрос на разъяснение. В течение 2-х дней Заказчик обязан дать ответ."
+        }
+        ,{Title:"04",
+        Subtitle:"Анализ тендерной докуметации",
+        Text:"Обращаем Ваше внимание на ключевые моменты тендерной документации. Проверяем тендер на наличие коррупционной составляющей."
+        }
+        ,{Title:"05",
+        Subtitle:"Проверка репутации Заказчика",
+        Text:"Анализируем историю проведения закупок Заказчиком: причины отклонения заявок, процент снижения на аукционах, с какими компаниями были заключены контракты и т. д."
+        }
+        ,{Title:"06",
+        Subtitle:"Подготовка заявки на участие в торгах",
+        Text:"Готовим заявку в полном объёме, включая техническую часть"
+        }
+        ,{Title:"07",
+        Subtitle:"Участие в торгах",
+        Text:"Отыгрываем аукцион в соответствии с рассчитанным заранее минимальным ценовым порогом."
+        }
+        ,{Title:"08",
+        Subtitle:"Подача жалобы в ФАС",
+        Text:"В случае неправомерных действий со стороны Заказчика, подаём жалобу в Федеральную Антимонопольную Службу (ФАС)."
+        }
+        ,{Title:"09",
+        Subtitle:"Оформление банковских гарантий и тендерных кредитов",
+        Text:"Помогаем получить банковские гарантии и тендерные кредиты для обеспечения заявок и обеспечения исполнения контрактов на самых выгодных условиях."
+        }
+        ,{Title:"10",
+        Subtitle:"Подписание контракта с Заказчиком",
+        Text:"Подписываем контракт с Заказчиком в электронном виде на электронной торговой площадке, после чего можно приступать к выполнению работ!"
+        }
+
+
+    ]
+
+
     $scope.stepsNext=function(){
         if( $scope.stepIndex==10){
             return $scope.stepIndex=1}
@@ -34,66 +80,19 @@ angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog) {
 
   console.log("slid",$scope.slider.value);
     $scope.clickToOpen = function () {
+        console.log("!!!")
         ngDialog.open({ template: '../view/modal.html', className: 'ngdialog-modal' });
+    };
+
+    $scope.clickToOpenDone = function () {
+        ngDialog.close({ template: '../view/modal.html', className: 'ngdialog-modal' });
+        console.log("1111");
+        ngDialog.open({ template: '../view/done.html', className: 'ngdialog-modalDone' });
     };
 
     $scope.clickToOpenDip = function (dip) {
         ngDialog.open({ template: '../view/'+dip+'.html', className: 'ngdialog-modalDip' });
     };
 
-    $scope.myInterval = 5000;
-    $scope.noWrapSlides = false;
-    $scope.active = 0;
-    var slides = $scope.slides = [];
-    var currIndex = 0;
 
-    $scope.addSlide = function() {
-        var newWidth = 600 + slides.length + 1;
-        slides.push({
-            image: '//unsplash.it/' + newWidth + '/300',
-            text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
-            id: currIndex++
-        });
-    };
-
-    $scope.randomize = function() {
-        var indexes = generateIndexesArray();
-        assignNewIndexesToSlides(indexes);
-    };
-
-    for (var i = 0; i < 4; i++) {
-        $scope.addSlide();
-    }
-
-    // Randomize logic below
-
-    function assignNewIndexesToSlides(indexes) {
-        for (var i = 0, l = slides.length; i < l; i++) {
-            slides[i].id = indexes.pop();
-        }
-    }
-
-    function generateIndexesArray() {
-        var indexes = [];
-        for (var i = 0; i < currIndex; ++i) {
-            indexes[i] = i;
-        }
-        return shuffle(indexes);
-    }
-
-    // http://stackoverflow.com/questions/962802#962890
-    function shuffle(array) {
-        var tmp, current, top = array.length;
-
-        if (top) {
-            while (--top) {
-                current = Math.floor(Math.random() * (top + 1));
-                tmp = array[current];
-                array[current] = array[top];
-                array[top] = tmp;
-            }
-        }
-
-        return array;
-    }
 });

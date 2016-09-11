@@ -7,6 +7,11 @@
     font-family: Exo2Regular;
     src: url(../fonts/Exo2-Regular.ttf);
 }
+
+@font-face {
+    font-family: Exo2SemiBold;
+    src: url(../fonts/Exo2-SemiBold.ttf);
+}
 @font-face {
     font-family: Exo2LightCondensed;
     src: url(../fonts/Exo2-LightCondensed.otf);
@@ -14,6 +19,11 @@
 @font-face {
     font-family: Exo2Light;
     src: url(../fonts/Exo2-Light.ttf);
+}
+
+a{
+    color: #000000!important;
+    cursor: pointer;
 }
 .ngdialog-modalDip .ngdialog-content{
     z-index: 1000;
@@ -26,6 +36,12 @@
     border-radius: 20px;
     margin-left: calc(50% - 230px);
 
+}
+.closeModal{
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
 .ngdialog-modalDip .ngdialog-content img{
@@ -46,7 +62,7 @@
     margin-left: calc(50% - 13vw);
 
 }
-.ngdialog-modal .ngdialog-content p:nth-child(1){
+.ngdialog-modal .ngdialog-content .title{
     margin-top: 43px;
     font-family: Exo2SemiBoldCondensed;
     color: #ffffff;
@@ -54,7 +70,7 @@
 
 }
 
-.ngdialog-modal .ngdialog-content p:nth-child(2){
+.ngdialog-modal .ngdialog-content .subTitle{
     font-family: Exo2Regular;
     font-size: 16px;
     color: #ffffff;
@@ -70,6 +86,34 @@
     outline: none;
     margin-top: 27px;
     border: none;
+
+}
+
+.ngdialog-modalDone .ngdialog-content{
+    z-index: 1000;
+    position: absolute;
+    opacity: 1!important;
+    width: 400px;
+    height: 200px;
+    margin-top: 240px;
+    background-color: #00B6E1;
+    border-radius: 20px;
+    margin-left: calc(50% - 13vw);
+
+}
+.ngdialog-modalDone .ngdialog-content .subTitle{
+    font-family: Exo2Regular;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 9.4%;
+    margin-right: 9.4%;
+    line-height: 17px;
+}
+.ngdialog-modalDone .ngdialog-content .title{
+    margin-top: 72px;
+    font-family: Exo2SemiBoldCondensed;
+    color: #ffffff;
+    font-size: 28px;
 
 }
 
@@ -129,6 +173,7 @@ body{
 #header .numberNum{
     font-size: 25px;
     font-weight: 600;
+    font-family: Exo2Regular;
 
 }
 
@@ -162,7 +207,8 @@ body{
 
 #header .menu div p{
     display: inline-block;
-    font-size: 11px;
+    font-size: 12px;
+    font-family: Exo2SemiBold
 }
 
 .blocks
@@ -204,18 +250,17 @@ body{
 #block1 .pros{
     float: right;
     margin-top: 34px;
-    margin-left: 593px;
-    margin-right: 137px;
-}
+    margin-left: 604px;
+    margin-right: 15px}
 #block1 .pros img{
     display: inline-block;
-    width: 48px;
+    width: 64px;
 }
 #block1 .pros p{
     color: #ffffff;
     display: inline-block;
-    width: 96px;
-    font-size: 9px;
+    width: 122px;
+    font-size: 13px;
     vertical-align: middle;
 }
 #block1 .application{
@@ -238,10 +283,10 @@ body{
 #block1 .condition{
     color: #ffffff;
     float: right;
-    margin-left: 653px;
-    margin-right: 296px;
-    font-size: 10px;
-    margin-top: 29px;
+    margin-left: 650px;
+    margin-right: 280px;
+    font-size: 12px;
+    margin-top: 19px;
     margin-bottom: 0;
 }
 
@@ -738,6 +783,15 @@ body{
     margin-left: 40px;
     font-family: Exo2Regular;
 }
+#block6 .textForNext{
+    color: #ffffff;
+    font-size: 107px;
+    width: 300px;
+    margin-top: 68px;
+    font-weight: 600;
+    margin-left: 40px;
+    font-family: Exo2Regular;
+}
 #block7{
     background-image: url("../images/bgScreen4.jpg");
     background-size: 100% 100%;
@@ -847,6 +901,24 @@ body{
     margin-top: 46px;
     color: #ffffff;
     margin-left: 78px;
+}
+
+.sliderInfo
+.sliderInfo8
+.sliderInfo10
+.sliderInfo12
+.sliderInfo14
+.sliderInfo16
+.sliderInfo18
+.sliderInfo20
+.sliderInfo22
+.sliderInfo24 {
+    width: 130px;
+    height: 40px;
+    background-color:#00B8DC ;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
 }
 #block9{
     background-image: url("../images/bgScreen5.jpg");

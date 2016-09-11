@@ -15,31 +15,31 @@
               <a style="font-size:10px" ng-click="clickToOpen()">бесплатная консультация</a>
           </div>
     </div>
-    <div class="menu" >
+    <div class="menu" id="/header1">
 
         <div >
             <img src="../images/select.png">
-            <p align="center">ГЛАВНАЯ</p>
+            <a href="#header1"><p align="center">ГЛАВНАЯ</p></a>
         </div>
         <div >
             <img src="../images/select.png">
-            <p align="center" >ПРЕИМУЩЕСТВА УЧАСТИЯ</p>
+            <a href="#block3"><p align="center" >ПРЕИМУЩЕСТВА УЧАСТИЯ</p></a>
         </div>
         <div >
             <img src="../images/select.png">
-            <p align="center">ЧТО ВКЛЮЧАЕТ СОПРОВОЖДЕНИЕ</p>
+            <a href="#block6"><p align="center" >ЧТО ВКЛЮЧАЕТ СОПРОВОЖДЕНИЕ</p></a>
         </div>
         <div >
             <img src="../images/select.png">
-            <p align="center">ТАРИФЫ</p>
+            <a href="#block8"><p align="center">ТАРИФЫ</p></a>
         </div>
         <div>
             <img src="../images/select.png">
-            <p align="center">ИСТОРИЯ УСПЕХА</p>
+            <a href="#block10"><p align="center">ИСТОРИЯ УСПЕХА</p></a>
         </div>
         <div >
             <img src="../images/select.png">
-            <p align="center">НАША ГЕОГРАФИЯ</p>
+            <a href="#block12"><p align="center">НАША ГЕОГРАФИЯ</p></a>
         </div>
     </div>
 </div>
@@ -54,10 +54,10 @@
             <p>Гарантия допуска
                 к участию в торгах</p>
             <img src="../images/30min.png">
-            <p>Срочная подготовка
+            <p>Срочная подготовка<br>
                 заявки</p>
             <img src="../images/map.png">
-            <p>Работаем
+            <p>Работаем<br>
                 по всей России</p>
         </div>
         <button class="application" ng-click="clickToOpen()">Оставить заявку</button>
@@ -88,6 +88,7 @@
             </div>
         </div>
     </div>
+    <div id="/block3"></div>
     <div id="block3" >
         <a  name="top" ></a>
         <p class="title">Преимущества участия в закупках</p>
@@ -169,6 +170,7 @@
             по Вашей тематике за последние полгода</p>
         <button class="application" ng-click="clickToOpen()">Оценить шансы</button>
     </div>
+    <div id="/block6"></div>
     <div id="block6" class="row">
             <div class="whatInc">
                 <p>Что включает
@@ -179,11 +181,12 @@
                 <div id="carousel_0" class="carousel slide" data-interval="false" >
 
                     <div class="carousel-inner" role="listbox" style="margin-top: 0">
-                                <div class="item active">
+                        <div class="item" ng-repeat="prev in Prevs" ng-class="{active : $first}">
                                     <div class="steps" >
-                                        <p  class="title">01</p>
-                                        <p  class="subTitle">Аккредитация на всех необходимых электронных торговых площадках</p>
-                                        <div class="prev01_row1">
+                                        <p  class="title">{{prev.Title}}</p>
+                                        <p  class="subTitle">{{prev.Subtitle}}</p>
+                                        <p>{{prev.Text}}</p>
+                                        <div class="prev01_row1" ng-if="$index==0">
                                             <img src="../images/sb.png" style="display: inline-block">
                                             <p style="display: inline-block">Сбербанк-АСТ</p>
                                             <img src="../images/eetp.png" style="display: inline-block">
@@ -191,77 +194,15 @@
                                             <img src="../images/rtc.png" style="display: inline-block">
                                             <p style="display: inline-block">РТС</p>
                                         </div>
-                                        <div>
+                                        <div ng-if="$index==0">
                                             <img src="../images/infinSmall.png" style="display: inline-block">
                                             <p style="display: inline-block">ММВБ</p>
                                             <img src="../images/oet.png" style="display: inline-block">
                                             <p style="display: inline-block">ЗаказыРФ</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                       <p  class="title">02</p>
-                                       <p class="subTitle">Ежедневная рассылка «свежих» тендеров по Вашей тематике</p>
-                                       <p> Выборка тендеров производится вручную, поэтому Вы будете получать только те тендеры, которые полностью соответствуют Вашим критериям.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">03</p>
-                                        <p class="subTitle">Подача запросов на разъяснение положений документации</p>
-                                        <p>Если по тендеру возникают вопросы, отправляем Заказчику запрос на разъяснение. В течение 2-х дней Заказчик обязан дать ответ.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">04</p>
-                                        <p class="subTitle">Анализ тендерной докуметации</p>
-                                        <p> Обращаем Ваше внимание на ключевые моменты тендерной документации. Проверяем тендер на наличие коррупционной составляющей.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">05</p>
-                                        <p class="subTitle">Проверка репутации Заказчика</p>
-                                        <p>Анализируем историю проведения закупок Заказчиком: причины отклонения заявок, процент снижения на аукционах, с какими компаниями были заключены контракты и т. д.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">06</p>
-                                        <p class="subTitle">Подготовка заявки на участие в торгах</p>
-                                        <p>Готовим заявку в полном объёме, включая техническую часть.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">07</p>
-                                        <p class="subTitle">Участие в торгах</p>
-                                        <p>Отыгрываем аукцион в соответствии с рассчитанным заранее минимальным ценовым порогом.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">08</p>
-                                        <p class="subTitle">Подача жалобы в ФАС</p>
-                                        <p> В случае неправомерных действий со стороны Заказчика, подаём жалобу в Федеральную Антимонопольную Службу (ФАС).</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">09</p>
-                                        <p class="subTitle">Оформление банковских гарантий и тендерных кредитов</p>
-                                        <p>Помогаем получить банковские гарантии и тендерные кредиты для обеспечения заявок и обеспечения исполнения контрактов на самых выгодных условиях.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="steps">
-                                        <p  class="title">10</p>
-                                        <p class="subTitle">Подписание контракта с Заказчиком</p>
-                                        <p>Подписываем контракт с Заказчиком в электронном виде на электронной торговой площадке, после чего можно приступать к выполнению работ!</p>
-                                    </div>
-                                </div>
+                        </div>
+
 
                                 </div>
 
@@ -312,11 +253,22 @@
 
         </div>
     </div>
+    <div id="/block8"></div>
     <div id="block8" class="row">
 
         <div class="selectSlide col-lg-6 col-xs-6 col-md-6">
             <p class="title" align="left">Выберите свой период обслуживания</p>
             <p class="subTitle" align="left">Мы заинтересованы в Вашей победе не меньше, чем Вы сами, ведь оплачиваются только выигранные тендеры!</p>
+            <div  class="sliderInfo" align="center" ng-if="slider.value==6">70 000 р</div>
+            <div  class="sliderInfo8" align="center" ng-if="slider.value==8">80 000 р</div>
+            <div  class="sliderInfo10" align="center" ng-if="slider.value==10">90 000 р</div>
+            <div  class="sliderInfo12" align="center" ng-if="slider.value==12">100 000 р</div>
+            <div  class="sliderInfo14" align="center" ng-if="slider.value==14">110 000 р</div>
+            <div  class="sliderInfo16" align="center" ng-if="slider.value==16">120 000 р</div>
+            <div  class="sliderInfo18" align="center" ng-if="slider.value==18">130 000 р</div>
+            <div  class="sliderInfo20" align="center" ng-if="slider.value==20">140 000 р</div>
+            <div  class="sliderInfo22" align="center" ng-if="slider.value==22">150 000 р</div>
+            <div  class="sliderInfo24" align="center" ng-if="slider.value==24">160 000 р</div>
             <rzslider rz-slider-model="slider.value"
                       rz-slider-options="slider.options"></rzslider>
         </div>
@@ -371,6 +323,7 @@
             <p>Анализ документации и проверка репутации Заказчика</p>
         </div>
     </div>
+    <div id="/block10"></div>
     <div id="block10" class="row">
         <div class="history col-lg-6 col-xs-6 col-md-6">
             <p class="title">Истории успеха наших клиентов</p>
@@ -539,6 +492,7 @@
         </div>
 
     </div>
+    <div id="/block12"></div>
     <div id="block12">
         <div class="map" style="display: inline-block"></div>
         <div style="display: inline-block;vertical-align: top">
