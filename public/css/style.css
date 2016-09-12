@@ -20,6 +20,11 @@
     font-family: Exo2Light;
     src: url(../fonts/Exo2-Light.ttf);
 }
+
+a{
+    color: #000000!important;
+    cursor: pointer;
+}
 .ngdialog-modalDip .ngdialog-content{
     z-index: 1000;
     position: absolute;
@@ -31,6 +36,12 @@
     border-radius: 20px;
     margin-left: calc(50% - 230px);
 
+}
+.closeModal{
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
 .ngdialog-modalDip .ngdialog-content img{
@@ -51,7 +62,7 @@
     margin-left: calc(50% - 13vw);
 
 }
-.ngdialog-modal .ngdialog-content p:nth-child(1){
+.ngdialog-modal .ngdialog-content .title{
     margin-top: 43px;
     font-family: Exo2SemiBoldCondensed;
     color: #ffffff;
@@ -59,7 +70,7 @@
 
 }
 
-.ngdialog-modal .ngdialog-content p:nth-child(2){
+.ngdialog-modal .ngdialog-content .subTitle{
     font-family: Exo2Regular;
     font-size: 16px;
     color: #ffffff;
@@ -75,6 +86,34 @@
     outline: none;
     margin-top: 27px;
     border: none;
+
+}
+
+.ngdialog-modalDone .ngdialog-content{
+    z-index: 1000;
+    position: absolute;
+    opacity: 1!important;
+    width: 400px;
+    height: 200px;
+    margin-top: 240px;
+    background-color: #00B6E1;
+    border-radius: 20px;
+    margin-left: calc(50% - 13vw);
+
+}
+.ngdialog-modalDone .ngdialog-content .subTitle{
+    font-family: Exo2Regular;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 9.4%;
+    margin-right: 9.4%;
+    line-height: 17px;
+}
+.ngdialog-modalDone .ngdialog-content .title{
+    margin-top: 72px;
+    font-family: Exo2SemiBoldCondensed;
+    color: #ffffff;
+    font-size: 28px;
 
 }
 
@@ -192,7 +231,7 @@ body {
 
 #header .menu div p {
     display: inline-block;
-    font-size: 13px;
+    font-size: 12px;
     font-family: Exo2SemiBold
 }
 
@@ -237,22 +276,19 @@ body {
 #block1 .pros {
     float: right;
     margin-top: 34px;
-    margin-left: 593px;
-    margin-right: 35px;
-}
-
-#block1 .pros img {
+    margin-left: 604px;
+    margin-right: 15px}
+#block1 .pros img{
     display: inline-block;
-    width: 56px;
+    width: 64px;
 }
 
 #block1 .pros p {
     color: #ffffff;
     display: inline-block;
-    width: 114px;
+    width: 122px;
     font-size: 13px;
     vertical-align: middle;
-    margin-right: 10px;
 }
 
 #block1 .application {
@@ -275,10 +311,10 @@ body {
 #block1 .condition {
     color: #ffffff;
     float: right;
-    margin-left: 653px;
-    margin-right: 270px;
+    margin-left: 650px;
+    margin-right: 280px;
     font-size: 12px;
-    margin-top: 29px;
+    margin-top: 19px;
     margin-bottom: 0;
 }
 
@@ -803,8 +839,16 @@ body {
     margin-left: 40px;
     font-family: Exo2Regular;
 }
-
-#block7 {
+#block6 .textForNext{
+    color: #ffffff;
+    font-size: 107px;
+    width: 300px;
+    margin-top: 68px;
+    font-weight: 600;
+    margin-left: 40px;
+    font-family: Exo2Regular;
+}
+#block7{
     background-image: url("../images/bgScreen4.jpg");
     background-size: 100% 100%;
     width: 100%;
@@ -917,6 +961,24 @@ body {
     margin-top: 46px;
     color: #ffffff;
     margin-left: 78px;
+}
+
+.sliderInfo
+.sliderInfo8
+.sliderInfo10
+.sliderInfo12
+.sliderInfo14
+.sliderInfo16
+.sliderInfo18
+.sliderInfo20
+.sliderInfo22
+.sliderInfo24 {
+    width: 130px;
+    height: 40px;
+    background-color:#00B8DC ;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
 }
 
 #block9 {
@@ -1176,7 +1238,7 @@ body {
     margin-top: 5px;
 }
 
-#block12 .greenRingText p {
+#block12 .greenRingText p{
     text-align: center;
     color: #ffffff;
     display: inline-block;
@@ -1186,7 +1248,7 @@ body {
     font-size: 13px;
 }
 
-#block12 .procent p:nth-child(1) {
+#block12 .procent p:nth-child(1){
     display: inline-block;
     font-size: 37px;
     color: #A4E045;
@@ -1194,10 +1256,9 @@ body {
     font-weight: 600;
     margin-top: 10px;
 }
-
-#block12 .procent p:nth-child(2) {
+#block12 .procent p:nth-child(2){
     display: inline-block;
-    color: #ffffff;
+    color:#ffffff;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
@@ -1209,15 +1270,13 @@ body {
     width: 100%;
     margin: auto;
 }
-
-.carousel-inner > .item > img {
+.carousel-inner > .item > img{
     margin-left: 104px;
 }
 
 .carousel-control:focus, .carousel-control:hover {
     background: none;
 }
-
 .carousel-inner {
     position: relative;
     width: 100%;
@@ -1225,16 +1284,15 @@ body {
     margin-top: 65px;
 }
 
-.carousel-control.left {
+.carousel-control.left{
     background: none;
 }
-
-#footer {
-    height: 193px;
-    padding-top: 40px
+#footer{
+    height:193px;
+    padding-top:40px
 }
 
-#footer .logoText {
+#footer .logoText{
     font-size: 12px;
     display: inline-block;
     line-height: 4px;
@@ -1242,24 +1300,22 @@ body {
     margin-top: 20px;
     vertical-align: bottom
 }
-
-#footer .info {
+#footer .info{
     width: 80%;
     margin: auto;
     height: 87px;
 }
 
-#footer .number {
+#footer .number{
     float: right;
 }
-
-#footer .numberNum {
+#footer .numberNum{
     font-size: 25px;
     font-weight: 600;
 
 }
 
-#footer .logo {
+#footer .logo{
     float: left;
 }
 

@@ -15,9 +15,9 @@ var mailgun = require('mailgun-js')({apiKey: "key-8119f739e6e9f9fe1d30c19d1db87a
 
 
 
-app.set('port', (process.env.PORT || 3001));
+app.set('port', (process.env.PORT || 3000));
 
-app.get('', function (req, res) {
+app.get('/', function (req, res) {
    res.sendFile(__dirname + '/index.html')
 });
 app.use(express.static('public'));
