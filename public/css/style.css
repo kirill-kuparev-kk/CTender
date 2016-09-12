@@ -21,6 +21,11 @@
     src: url(../fonts/Exo2-Light.ttf);
 }
 
+@font-face {
+    font-family:rouble;
+    src: url(../fonts/rouble.ttf);
+}
+
 a{
     color: #000000!important;
     cursor: pointer;
@@ -963,23 +968,34 @@ body {
     margin-left: 78px;
 }
 
-.sliderInfo
-.sliderInfo8
-.sliderInfo10
-.sliderInfo12
-.sliderInfo14
-.sliderInfo16
-.sliderInfo18
-.sliderInfo20
-.sliderInfo22
+.sliderInfo,
+.sliderInfo8,
+.sliderInfo10,
+.sliderInfo12,
+.sliderInfo14,
+.sliderInfo16,
+.sliderInfo18,
+.sliderInfo20,
+.sliderInfo22,
 .sliderInfo24 {
     width: 130px;
     height: 40px;
-    background-color:#00B8DC ;
+    background-color:#62D3EE;
     border-radius: 4px;
     color: white;
     padding: 10px;
 }
+
+.sliderInfo{}
+.sliderInfo8{}
+.sliderInfo10{}
+.sliderInfo12{}
+.sliderInfo14{}
+.sliderInfo16{}
+.sliderInfo18{}
+.sliderInfo20{}
+.sliderInfo22{}
+.sliderInfo24{}
 
 #block9 {
     background-image: url("../images/bgScreen5.jpg");
