@@ -72,19 +72,35 @@
             заказчики</p>
         </div>
 
-        <div class="myCustomersLogo">
+        <div class="myCustomersLogo" ng-if="logoPage1">
             <div class=" clientLogo" style="margin-top:3px" >
                 <div class="whiteBlock"><div class="logo1 "></div> </div>
                 <div class="grewBlock"><div class="logo2 "></div> </div>
                 <div class="whiteBlock"><div class="logo3 "></div> </div>
                 <div class="grewBlock"><div class="logo4 "></div> </div>
             </div>
-            <img src="../images/ringArrow.png" class="ringArrow">
+            <img src="../images/ringArrow.png" class="ringArrow" ng-click="changePage()">
             <div class="clientLogo">
                 <div class="grewBlock"> <div class="logo5"></div>  </div>
                 <div class="whiteBlock"> <div class="logo6"></div>  </div>
                 <div class="grewBlock"> <div class="logo7"></div>  </div>
                 <div class="whiteBlock"> <div class="logo8"></div>  </div>
+            </div>
+        </div>
+
+        <div class="myCustomersLogo" ng-if="logoPage2">
+            <div class=" clientLogo" style="margin-top:3px" >
+                <div class="whiteBlock"><div class="logo9 "></div> </div>
+                <div class="grewBlock"><div class="logo10 "></div> </div>
+                <div class="whiteBlock"><div class="logo11 "></div> </div>
+                <div class="grewBlock"><div class="logo12 "></div> </div>
+            </div>
+            <img src="../images/ringArrow.png" class="ringArrow" ng-click="changePage()">
+            <div class="clientLogo">
+                <div class="grewBlock"> <div class="logo13"></div>  </div>
+                <div class="whiteBlock"> <div class="logo14"></div>  </div>
+                <div class="grewBlock"> <div class="logo15"></div>  </div>
+                <div class="whiteBlock"> <div class="logo16"></div>  </div>
             </div>
         </div>
     </div>
@@ -181,7 +197,7 @@
                 <div id="carousel_0" class="carousel slide" data-interval="false" >
 
                     <div class="carousel-inner" role="listbox" style="margin-top: 0">
-                        <div class="item" ng-repeat="prev in Prevs" ng-class="{active : $first}">
+                        <div class="item" ng-repeat="prev in Prevs" ng-class="{active : $first}"  >
                                     <div class="steps" >
                                         <p  class="title">{{prev.Title}}</p>
                                         <p  class="subTitle">{{prev.Subtitle}}</p>
@@ -201,34 +217,27 @@
                                             <p style="display: inline-block">ЗаказыРФ</p>
                                         </div>
                                     </div>
+                                    <p>{{$index}}</p>
                         </div>
-
-
-                                </div>
-
-
-                            </div>
-
-
-
-                        </div>
-
-                        <a  href="#carousel_0" role="button" data-slide="prev" ng-click="stepsPrev()">
+                    </div>
+                </div>
+            </div>
+            <a  href="#carousel_0" role="button" data-slide="prev" ng-click="stepsPrev()">
                             <span  aria-hidden="true"><img src="../images/arrowNext.png" style="    opacity: 1;
-    position: absolute;
-    margin-top: 102px;
-    margin-left: -484px;
-    transform: rotate(180deg);
-    width: 70px;"></span>
+                                position: absolute;
+                                margin-top: 102px;
+                                margin-left: -484px;
+                                transform: rotate(180deg);
+                                width: 70px;"></span>
 
-                        </a>
-                        <a href="#carousel_0" role="button" data-slide="next" ng-click="stepsNext()">
+             </a>
+            <a href="#carousel_0" role="button" data-slide="next" ng-click="stepsNext()">
                         <span ><img src="../images/arrowNext.png" style="    margin-top: 127px;
-    margin-left: -34px;
-    opacity: 1;
-    position: absolute;
-    width: 70px;"></span>
-                        </a>
+                            margin-left: -34px;
+                            opacity: 1;
+                            position: absolute;
+                            width: 70px;"></span>
+            </a>
 
             <div class="nextInfo">
                 <p ng-if="stepIndex!==10">0{{stepIndex}}</p>
@@ -359,56 +368,18 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="avatar">
-                            <img src="../images/Andrew.png">
-                        </div>
-                        <p class="name">Алексей Милованов</p>
-                        <p class="work">придпринематель, ООО "Алюнест" тел. 8(918) 450 47 96</p>
-                        <p class="title">Решили искать новые рынки получения заказов </p>
-                        <p class="text">Заключили договор с «Си тендер» начали работу. Теперь выигрываем торги и получаем новые заказы. Всю работу за тебя делает компания, нам нужно только дать цену, это экономит на сотрудниках и экономит свое время. Оплата только за выигранные тендеры, т. е. выиграл – заплатил, не выиграл – не заплатил )) а по факту получается, что за подготовку тендера платит сам заказчик, так как мы закладываем услуги «Си тендер» в цену контракта))</p>
 
-                    </div>
-
-                    <div class="item">
+                    <div class="item" ng-repeat="Claent in Claents" ng-class="{active : $first}">
                         <div class="avatar">
-                            <img src="../images/Andrew.png">
+                            <img src="{{Claent.img}}">
                         </div>
-                        <p class="name">Павел Герасимов</p>
-                        <p class="work">придпринематель, ООО «ЖилРемСтрой» тел. 8-918-435-13-18</p>
-                        <p class="title">В «Ctender» предложили платить проценты за выигрыш
-                        </p>
-                        <p class="text">Сотрудничаем с этой компанией уже более года, ребята отрабатывают себя на все 100%
-                            Документы готовят быстро и качественно, а это самое главное, так как иногда попадаются такие Заказчики, которые готовы придраться к любой запятой, лишь бы отстранить от тендера не угодных им участников, но и такие ситуации решаются специалистами из «Ctender», но уже в ФАСе.
-                        </p>
-                    </div>
+                        <p class="name">{{Claent.name}}</p>
+                        <p class="work">{{Claent.work}}</p>
+                        <p class="title">{{Claent.title}}</p>
+                        <p class="text">{{Claent.text}}</p>
 
-                    <div class="item">
-                        <div class="avatar">
-                            <img src="../images/Andrew.png">
-                        </div>
-                        <p class="name">Юлия Наумкина</p>
-                        <p class="work">придпринематель, ИП Наумкина Ю.В .тел. 8-978-709-77-93
-                        </p>
-                        <p class="title">С компанией "С Тender" мы сотрудничаем в течение года, являясь активными участниками торгов, и совместно одержали уже немало побед</p>
-                        <p class="text">В связи со вступлением Республики Крым и города Севастополя в состав Российской Федерации, субъекты предпринимательства столкнулись с необходимостью сориентироваться в новой для нас законодательной базе.
-                            Спасибо вам за то, что своим общением вы вызываете только положительные эмоции, за индивидуальный подход к клиенту, за доброжелательность и желание в любой момент прийти на помощь!
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <div class="avatar">
-                            <img src="../images/Andrew.png">
-                        </div>
-                        <p class="name">Александр Шерешевский</p>
-                        <p class="work">придпринематель, ООО «НПСТЦ» тел. 8-495-999-48-25</p>
-                        <p class="title">Сначала были сомнения по поводу обращения в компанию по сопровождению тендеров, тем более, когда эта компания находится в другом городе</p>
-                        <p class="text">Ребята из «Ctender» предложили так сказать «тест-драйв» своих услуг, чтобы можно было понять как они работают и оценить качество удалённого обслуживания. С момента подготовки первого тендера прошло уже довольно много времени. До сих пор работаем вместе… Даже если сроки поджимают берутся за работу и доводят её до конца. Да и условия по оплате довольно интересные  – платим проценты по выигранным контрактам.</p>
                     </div>
                 </div>
-
-
-
             </div>
 
             <a  href="#carousel_1" role="button" data-slide="prev">
@@ -462,22 +433,22 @@
                     </div>
 
                     <div class="item">
-                        <img src="../images/dip/Алюнест.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip9')">
+                        <img src="../images/dip/Алюнест-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip9')">
                         <img src="../images/dip/Мегаполис.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip4')">
-                        <img src="../images/dip/Наумкина.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip5')">
+                        <img src="../images/dip/Наумкина-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip5')">
                     </div>
 
                     <div class="item">
-                        <img src="../images/dip/НПСТЦ.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip6')">
+                        <img src="../images/dip/НПСТЦ-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip6')">
                         <img src="../images/dip/Анта-С.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip7')">
-                        <img src="../images/dip/ЖРС.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip8')">
+                        <img src="../images/dip/ЖРС-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip8')">
                     </div>
 
                     <div class="item">
 
-                        <img src="../images/dip/ИдельТехно.jpg" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px" ng-click="clickToOpenDip('modalDip3')">
+                        <img src="../images/dip/ИдельТехно.jpg" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px" ng-click="clickToOpenDipLend('modalDip3')">
                         <img src="../images/dip/Солевик.jpg" style="width: 200px;height: 300px;margin-left: 64px" ng-click="clickToOpenDip('modalDip10')">
-                        <img src="../images/dip/ЮжныйМост.png" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px" ng-click="clickToOpenDip('modalDip11')">
+                        <img src="../images/dip/ЮжныйМост.png" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px" ng-click="clickToOpenDipLend('modalDip11')">
                     </div>
                 </div>
                 <a  href="#carousel_2" role="button" data-slide="prev">
@@ -503,7 +474,23 @@
     </div>
     <div id="/block12"></div>
     <div id="block12">
-        <div class="map" style="display: inline-block"></div>
+        <div class="map" style="display: inline-block">
+            <div class="tick"></div>
+            <div class="tick1"></div>
+            <div class="tick2"></div>
+            <div class="tick3"></div>
+            <div class="tick4"></div>
+            <div class="tick5"></div>
+            <div class="tick6"></div>
+            <div class="tick7"></div>
+            <div class="tick8"></div>
+            <div class="tick9"></div>
+            <div class="tick10"></div>
+            <div class="tick11"></div>
+            <div class="tick12"></div>
+            <div class="tick13"></div>
+            <div class="tick14"></div>
+        </div>
         <div style="display: inline-block;vertical-align: top">
             <p class="title">Наша география</p>
             <p class="subTitle">Мы успешно обслуживаем</p>

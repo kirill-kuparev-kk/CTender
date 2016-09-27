@@ -1,0 +1,6 @@
+SetEnv GHOST_NODE_VERSION_CHECK false
+PassengerStartupFile server.js
+PassengerResolveSymlinksInDocumentRoot on
+Require all granted
+PassengerAppType node
+Options -MultiViews

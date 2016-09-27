@@ -36,7 +36,7 @@ a{
     opacity: 1!important;
     width: 460px;
     height: 660px;
-    margin-top: 20px;
+    margin-top: 2vw;
     /* background-color: #00B6E1; */
     border-radius: 20px;
     margin-left: calc(50% - 230px);
@@ -54,7 +54,22 @@ a{
     height: 100%;
 
 }
+.ngdialog-modalDipLend .ngdialog-content {
+    z-index: 1000;
+    position: absolute;
+    opacity: 1!important;
+    width: 660px;
+    height: 461px;
+    margin-top: 12vw;
+    /* background-color: #00B6E1; */
+    border-radius: 20px;
+    margin-left: calc(50% - 330px);
+}
+.ngdialog-modalDipLend .ngdialog-content img {
+    width: 100%;
+    height: 100%;
 
+}
 .ngdialog-modal .ngdialog-content{
     z-index: 1000;
     position: absolute;
@@ -375,37 +390,182 @@ body {
     vertical-align: top;
 }
 
-#block2 .myCustomersLogo .logo1 {
+
+#block2 .myCustomersLogo  .logo1{
     background-image: url("../images/clogos_01_bw.png");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat ;
     width: 99px;
     height: 44px;
     margin: auto;
     margin-top: 55px;
 }
-
-#block2 .myCustomersLogo .logo2 {
+#block2 .myCustomersLogo  .logo2{
     background-image: url("../images/clogos_02_bw.png");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat ;
     background-size: 100%;
-    width: 76px;
+    width: 76px ;
     height: 66px;
     margin: auto;
     margin-top: 41px;
 }
-
-#block2 .myCustomersLogo .logo3 {
+#block2 .myCustomersLogo  .logo3{
     background-image: url("../images/clogos_03_bw.png");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat ;
     background-size: 100%;
     width: 90px;
     height: 75px;
     margin: auto;
     margin-top: 44px;
 }
-
-#block2 .myCustomersLogo .logo4 {
+#block2 .myCustomersLogo  .logo4{
     background-image: url("../images/clogos_04_bw.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-top: 45px;
+}
+#block2 .myCustomersLogo  .logo5{
+    background-image: url("../images/clogos_05_bw.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 74px;
+    margin: auto;
+    margin-top: 45px;
+
+}
+#block2 .myCustomersLogo  .logo6{
+    background-image: url("../images/clogos_06_bw.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 70px;
+    height: 120px;
+    margin: auto;
+    margin-top: 30px;
+}
+#block2 .myCustomersLogo  .logo7{
+    background-image: url("../images/clogos_07_bw.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 32px;
+    margin: auto;
+    margin-top: 62px;
+}
+#block2 .myCustomersLogo  .logo8{
+    background-image: url("../images/ФСБ.png" );
+    background-repeat:no-repeat ;
+    background-size: 81%;
+    width: 90px;
+    height: 190px;
+    margin: auto;
+
+}
+#block2 .myCustomersLogo  .logo1:hover{
+    background-image: url("../images/clogos_01.png");
+    background-repeat:no-repeat ;
+    width: 99px;
+    height: 44px;
+    margin: auto;
+    margin-top: 55px;
+}
+#block2 .myCustomersLogo  .logo2:hover{
+    background-image: url("../images/clogos_02.png");
+    width: 76px ;
+    height: 66px;
+    margin: auto;
+    margin-top: 41px;
+}
+#block2 .myCustomersLogo  .logo3:hover{
+    background-image: url("../images/clogos_03.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 75px;
+    margin: auto;
+    margin-top: 44px;
+}
+#block2 .myCustomersLogo  .logo4:hover{
+    background-image: url("../images/clogos_04.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-top: 45px;
+}
+#block2 .myCustomersLogo  .logo5:hover{
+    background-image: url("../images/clogos_05.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 74px;
+    margin: auto;
+    margin-top: 45px;
+
+}
+#block2 .myCustomersLogo  .logo6:hover{
+    background-image: url("../images/clogos_06.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 70px;
+    height: 120px;
+    margin: auto;
+    margin-top: 30px;
+}
+#block2 .myCustomersLogo  .logo7:hover{
+    background-image: url("../images/clogos_07.png");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 90px;
+    height: 32px;
+    margin: auto;
+    margin-top: 62px;
+}
+#block2 .myCustomersLogo  .logo8:hover{
+    background-image: url("../images/ФСБ_цв.png");
+    background-repeat:no-repeat ;
+    background-size: 81%;
+    width: 90px;
+    height: 190px;
+    margin: auto;
+    margin-top: 4px;
+}
+
+#block2 .myCustomersLogo .logo9 {
+    background-image: url("../images/Аэрофлот.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 99px;
+    height: 44px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+#block2 .myCustomersLogo .logo10 {
+    background-image: url("../images/Мин. здравоохранения.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 76px;
+    height: 86px;
+    margin: auto;
+    margin-top: 29px;
+}
+
+#block2 .myCustomersLogo .logo11 {
+    background-image: url("../images/Башнефть.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90px;
+    height: 75px;
+    margin: auto;
+    margin-top: 62px;
+}
+
+#block2 .myCustomersLogo .logo12 {
+    background-image: url("../images/Мин. обороны.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -414,49 +574,50 @@ body {
     margin-top: 45px;
 }
 
-#block2 .myCustomersLogo .logo5 {
-    background-image: url("../images/clogos_05_bw.png");
+#block2 .myCustomersLogo .logo13 {
+    background-image: url("../images/Мин. спорта.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
-    height: 74px;
+    height: 117px;
     margin: auto;
-    margin-top: 45px;
+    margin-top: 22px;
 
 }
 
-#block2 .myCustomersLogo .logo6 {
-    background-image: url("../images/clogos_06_bw.png");
+#block2 .myCustomersLogo .logo14 {
+    background-image: url("../images/Транснефть.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 70px;
     height: 120px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 55px;
 }
 
-#block2 .myCustomersLogo .logo7 {
-    background-image: url("../images/clogos_07_bw.png");
+#block2 .myCustomersLogo .logo15 {
+    background-image: url("../images/Мин. юстиции.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
-    height: 32px;
+    height: 100px;
     margin: auto;
-    margin-top: 62px;
+    margin-top: 27px;
 }
 
-#block2 .myCustomersLogo .logo8 {
+#block2 .myCustomersLogo .logo16 {
     background-image: url("../images/clogos_08_bw.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-top: 4px;
     width: 90px;
     height: 48px;
     margin: auto;
     margin-top: 55px;
 }
 
-#block2 .myCustomersLogo .logo1:hover {
-    background-image: url("../images/clogos_01.png");
+#block2 .myCustomersLogo .logo9:hover {
+    background-image: url("../images/Аэрофлот_цв.png");
     background-repeat: no-repeat;
     width: 99px;
     height: 44px;
@@ -464,26 +625,26 @@ body {
     margin-top: 55px;
 }
 
-#block2 .myCustomersLogo .logo2:hover {
-    background-image: url("../images/clogos_02.png");
+#block2 .myCustomersLogo .logo10:hover {
+    background-image: url("../images/Мин. здравоохранения_цв.png");
     width: 76px;
-    height: 66px;
+    height: 86px;
     margin: auto;
-    margin-top: 41px;
+    margin-top: 29px;
 }
 
-#block2 .myCustomersLogo .logo3:hover {
-    background-image: url("../images/clogos_03.png");
+#block2 .myCustomersLogo .logo11:hover {
+    background-image: url("../images/Башнефть_цв.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
     height: 75px;
     margin: auto;
-    margin-top: 44px;
+    margin-top: 62px;
 }
 
-#block2 .myCustomersLogo .logo4:hover {
-    background-image: url("../images/clogos_04.png");
+#block2 .myCustomersLogo .logo12:hover {
+    background-image: url("../images/Мин. обороны_цв.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -492,45 +653,47 @@ body {
     margin-top: 45px;
 }
 
-#block2 .myCustomersLogo .logo5:hover {
-    background-image: url("../images/clogos_05.png");
+#block2 .myCustomersLogo .logo13:hover {
+    background-image: url("../images/Мин. спорта_цв.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
-    height: 74px;
+    height: 117px;
     margin: auto;
-    margin-top: 45px;
+    margin-top: 22px;
 
 }
 
-#block2 .myCustomersLogo .logo6:hover {
-    background-image: url("../images/clogos_06.png");
+#block2 .myCustomersLogo .logo14:hover {
+    background-image: url("../images/Транснефть_цв.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 70px;
     height: 120px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 55px;
 }
 
-#block2 .myCustomersLogo .logo7:hover {
-    background-image: url("../images/clogos_07.png");
+#block2 .myCustomersLogo .logo15:hover {
+    background-image: url("../images/Мин. юстиции_цв.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
-    height: 32px;
+    height: 100px;
     margin: auto;
-    margin-top: 62px;
+    margin-top: 27px;
 }
 
-#block2 .myCustomersLogo .logo8:hover {
+#block2 .myCustomersLogo .logo16:hover {
     background-image: url("../images/clogos_08.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-top: 4px;
     width: 90px;
     height: 48px;
     margin: auto;
     margin-top: 55px;
+
 }
 
 .ringArrow {
@@ -984,7 +1147,7 @@ body {
     background-image: url(../images/Chat.png);
     color: white;
     padding: 8px;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 21px;
     margin-left: 0px;
     position: relative;
@@ -1224,6 +1387,165 @@ body {
     margin-left: 45px;
     font-family: Exo2SemiBoldCondensed;
     width: 493px;
+}
+
+#block12 .tick,
+#block12 .tick1,
+#block12 .tick2,
+#block12 .tick3,
+#block12 .tick4,
+#block12 .tick5,
+#block12 .tick6,
+#block12 .tick7,
+#block12 .tick8,
+#block12 .tick9,
+#block12 .tick10,
+#block12 .tick11,
+#block12 .tick12,
+#block12 .tick13,
+#block12 .tick14
+{   z-index: 1;
+    background-image: url("../images/tick.png");
+    width: 24px;
+    height: 27px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    position:absolute;
+}
+
+#block12 .tick:hover,
+#block12 .tick1:hover,
+#block12 .tick2:hover,
+#block12 .tick3:hover,
+#block12 .tick4:hover,
+#block12 .tick5:hover,
+#block12 .tick6:hover,
+#block12 .tick7:hover,
+#block12 .tick8:hover,
+#block12 .tick9:hover,
+#block12 .tick10:hover,
+#block12 .tick11:hover,
+#block12 .tick12:hover,
+#block12 .tick13:hover,
+#block12 .tick14:hover
+{
+    background-image: url("../images/Simferopol.png");
+    width: 171px;
+    height: 77px;
+    background-size: 171px;
+    z-index: 1000;
+}
+#block12 .tick{    margin-left: 258px;
+    margin-top: 244px;}
+#block12 .tick1{     margin-left: 387px;
+    margin-top: 347px;}
+#block12 .tick2{    margin-left: 367px;
+    margin-top: 347px;}
+#block12 .tick3{ margin-left: 412px;
+    margin-top: 351px;}
+#block12 .tick4{    margin-left: 431px;
+    margin-top: 367px;}
+#block12 .tick5{    margin-left: 442px;
+    margin-top: 347px;}
+#block12 .tick6{margin-left: 468px;
+    margin-top: 325px;}
+#block12 .tick7{margin-left: 468px;
+    margin-top: 352px;}
+#block12 .tick8{
+    margin-left: 405px;
+    margin-top: 290px;
+}
+#block12 .tick9{       margin-left: 415px;
+    margin-top: 291px;}
+#block12 .tick10{        margin-left: 519px;
+    margin-top: 243px;}
+#block12 .tick11{     margin-left: 507px;
+    margin-top: 209px;}
+#block12 .tick12{
+    margin-left: 430px;
+    margin-top: 209px;
+}
+#block12 .tick13{   margin-left: 350px;
+    margin-top: 161px;}
+#block12 .tick14{
+    margin-left: 571px;
+    margin-top: 179px;
+}
+
+#block12 .tick1:hover{
+    background-image: url("../images/Simferopol.png");
+    margin-top: 317px;
+    margin-left: 377px;
+}
+#block12 .tick2:hover{background-image: url("../images/Sevastopol.png");
+    margin-left: 357px;
+    margin-top: 317px;
+   }
+#block12 .tick3:hover{
+    background-image: url("../images/Tuapse.png");
+    margin-left: 402px;
+    margin-top: 321px;
+}
+#block12 .tick4:hover{
+    background-image: url("../images/Sochi.png");
+    margin-left: 421px;
+    margin-top: 337px;
+}
+#block12 .tick5:hover{
+    background-image: url("../images/Maykop.png");
+    margin-left: 432px;
+    margin-top: 317px;
+}
+#block12 .tick6:hover{
+    background-image: url("../images/Kropotkin.png");
+    margin-left: 458px;
+    margin-top: 295px;;
+}
+#block12 .tick7:hover{
+    background-image: url("../images/Stavropol.png");
+    margin-left: 458px;
+    margin-top: 322px;
+}
+#block12 .tick8:hover{
+    background-image: url("../images/Novorossiysk.png");
+    margin-left: 405px;
+    margin-top: 290px;
+}
+#block12 .tick9:hover{background-image: url("../images/Rostov.png");
+    margin-left: 405px;
+    margin-top: 261px;}
+#block12 .tick10:hover{
+    background-image: url("../images/Samara.png");
+    margin-left: 509px;
+    margin-top: 213px;
+
+}
+#block12 .tick11:hover{
+    background-image: url("../images/Tolytti.png");
+    margin-left: 497px;
+    margin-top: 179px;
+}
+#block12 .tick12:hover{
+    background-image: url("../images/Moskva.png");
+    margin-left: 420px;
+    margin-top: 179px;
+}
+#block12 .tick13:hover{
+    background-image: url("../images/Piter.png");
+    margin-left: 340px;
+    margin-top: 131px;
+}
+#block12 .tick14:hover{
+    background-image: url("../images/Ekaterinburg.png");
+    margin-left: 561px;
+    margin-top: 149px;
+
+}
+
+#block12 .tick:hover{
+    background-image: url("../images/Kaliningrad.png");
+    margin-left: 248px;
+    margin-top: 214px;
 }
 
 #block12 .subTitle {
