@@ -1314,7 +1314,7 @@ body {
 }
 
 #block10 .reviews .avatar img {
-    margin-top: 25px;
+    margin-top: 13px;
     width: 77px;
     margin-left: 65px;
 }
@@ -1326,16 +1326,17 @@ body {
 }
 
 #block10 .reviews .work {
-    font-size: 10px;
+
+    font-size: 14px;
     margin-left: 65px;
-    width: 186px;
-    margin-top: -12px;
+    width: 275px;
+    margin-top: -7px;
     line-height: 13px;
     font-family: Exo2Light;
 }
 
 #block10 .reviews .text {
-    font-size: 13px;
+    font-size: 14px;
     width: 430px;
     margin-left: 65px;
 
@@ -1706,6 +1707,15 @@ body {
     margin-left: 101px;
 }
 
+/*ul[rn-carousel] > li{*/
+    /*position: static!important;*/
+/*}*/
+
+.rn-carousel-control.rn-carousel-control-prev:before {
+    content: ""!important; }
+
+.rn-carousel-control.rn-carousel-control-next:before {
+    content: ""!important; }
 
 
 

@@ -4,7 +4,8 @@ angular.module('appCTender', [
     'ui.router',
     'rzModule',
     'ngDialog',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'angular-carousel'
 
 ]).config(function($stateProvider, $urlRouterProvider) {
 

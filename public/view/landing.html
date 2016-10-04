@@ -72,7 +72,7 @@
             заказчики</p>
         </div>
 
-        <div class="myCustomersLogo" ng-if="logoPage1">
+        <div class="myCustomersLogo" ng-if="logoPage1" id="pageOne">
             <div class=" clientLogo" style="margin-top:3px" >
                 <div class="whiteBlock"><div class="logo1 "></div> </div>
                 <div class="grewBlock"><div class="logo2 "></div> </div>
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div class="myCustomersLogo" ng-if="logoPage2">
+        <div class="myCustomersLogo" ng-if="logoPage2" id="pageTwo">
             <div class=" clientLogo" style="margin-top:3px" >
                 <div class="whiteBlock"><div class="logo9 "></div> </div>
                 <div class="grewBlock"><div class="logo10 "></div> </div>
@@ -194,10 +194,15 @@
                     тендеров?</p>
             </div>
             <div class="prev">
-                <div id="carousel_0" class="carousel slide" data-interval="false" >
-
-                    <div class="carousel-inner" role="listbox" style="margin-top: 0">
-                        <div class="item" ng-repeat="prev in Prevs" ng-class="{active : $first}"  >
+                    <ul rn-carousel slides="slides" rn-carousel-index="carouselIndex">
+                            <span class="rn-carousel-control rn-carousel-control-prev ng-scope" ng-click="prevSlide()" ng-if="carouselIndex > 0 || false" style="z-index: 1000">
+                                <img src="../images/arrowNext.png" style="
+                                    transform: rotate(180deg);
+                                    width: 70px;
+                                    margin-top: -25px;
+                                    margin-left: -30px">
+                            </span>
+                        <li ng-repeat="prev in Prevs" style="position: static">
                                     <div class="steps" >
                                         <p  class="title">{{prev.Title}}</p>
                                         <p  class="subTitle">{{prev.Subtitle}}</p>
@@ -217,31 +222,39 @@
                                             <p style="display: inline-block">ЗаказыРФ</p>
                                         </div>
                                     </div>
-                                    <p>{{$index}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a  href="#carousel_0" role="button" data-slide="prev" ng-click="stepsPrev()">
-                            <span  aria-hidden="true"><img src="../images/arrowNext.png" style="    opacity: 1;
-                                position: absolute;
-                                margin-top: 102px;
-                                margin-left: -484px;
-                                transform: rotate(180deg);
-                                width: 70px;"></span>
+                        </li>
+                        <span class="rn-carousel-control rn-carousel-control-next ng-scope" ng-click="nextSlide()">
+                            <img src="../images/arrowNext.png" style="
+                              width: 70px;
+                              margin-right: -17px">
+                        </span>
 
-             </a>
-            <a href="#carousel_0" role="button" data-slide="next" ng-click="stepsNext()">
-                        <span ><img src="../images/arrowNext.png" style="    margin-top: 127px;
-                            margin-left: -34px;
-                            opacity: 1;
-                            position: absolute;
-                            width: 70px;"></span>
-            </a>
+                    </ul>
+
+
+
+
+            </div>
+            <!--<a  href="#carousel_0" role="button" data-slide="prev" ng-click="stepsPrev()">-->
+                            <!--<span  aria-hidden="true"><img src="../images/arrowNext.png" style="    opacity: 1;-->
+                                <!--position: absolute;-->
+                                <!--margin-top: 102px;-->
+                                <!--margin-left: -484px;-->
+                                <!--transform: rotate(180deg);-->
+                                <!--width: 70px;"></span>-->
+
+             <!--</a>-->
+            <!--<a href="#carousel_0" role="button" data-slide="next" ng-click="stepsNext()">-->
+                        <!--<span ><img src="../images/arrowNext.png" style="    margin-top: 127px;-->
+                            <!--margin-left: -34px;-->
+                            <!--opacity: 1;-->
+                            <!--position: absolute;-->
+                            <!--width: 70px;"></span>-->
+            <!--</a>-->
 
             <div class="nextInfo">
-                <p ng-if="stepIndex!==10">0{{stepIndex}}</p>
-                <p ng-if="stepIndex==10">{{stepIndex}}</p>
+                <p>0{{carouselIndex+1}}</p>
+                <p ng-if="carouselIndex==10">{{carouselIndex}}</p>
             </div>
     </div>
     <div id="block7">
@@ -272,7 +285,7 @@
     float: right;
     color: #AAAAAA;
     margin-right: 75px;
-    margin-top: 38px;
+    margin-top: 62px;
     z-index: 0;
     position: absolute;
     left: 404px;">кол-во месяцов</p>
@@ -375,6 +388,7 @@
                         </div>
                         <p class="name">{{Claent.name}}</p>
                         <p class="work">{{Claent.work}}</p>
+                        <p class="work">{{Claent.tel}}</p>
                         <p class="title">{{Claent.title}}</p>
                         <p class="text">{{Claent.text}}</p>
 
@@ -530,3 +544,5 @@
         </div>
     </div>
 </div>
+
+
