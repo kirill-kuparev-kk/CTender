@@ -531,7 +531,7 @@ body {
     width: 90px;
     height: 190px;
     margin: auto;
-    margin-top: 4px;
+    margin-top: 0px;
 }
 
 #block2 .myCustomersLogo .logo9 {
@@ -1716,6 +1716,25 @@ body {
 
 .rn-carousel-control.rn-carousel-control-next:before {
     content: ""!important; }
+
+
+ul[rn-carousel] {
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    position: relative;
+    -webkit-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+ul[rn-carousel] {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
 
 
 

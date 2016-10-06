@@ -147,13 +147,11 @@ angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog,$ti
 
   console.log("slid",$scope.slider.value);
     $scope.clickToOpen = function () {
-        console.log("!!!")
         ngDialog.open({ template: '../view/modal.html', className: 'ngdialog-modal' });
     };
 
     $scope.clickToOpenDone = function () {
         ngDialog.close({ template: '../view/modal.html', className: 'ngdialog-modal' });
-        console.log("1111");
         ngDialog.open({ template: '../view/done.html', className: 'ngdialog-modalDone' });
     };
 
