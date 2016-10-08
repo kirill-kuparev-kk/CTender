@@ -45,11 +45,21 @@ a{
 .closeModal{
     float: right;
     margin-right: 10px;
-    margin-top: 8px;
+    margin-top: -31px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.closeDip{
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-right: 10px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
-.ngdialog-modalDip .ngdialog-content img{
+.ngdialog-modalDip .ngdialog-content .dip{
     width: 100%;
     height: 100%;
 
@@ -455,7 +465,7 @@ body {
     margin-top: 62px;
 }
 #block2 .myCustomersLogo  .logo8{
-    background-image: url("../images/ФСБ.png" );
+    background-image: url("../images/FSB.png" );
     background-repeat:no-repeat ;
     background-size: 81%;
     width: 90px;
@@ -525,7 +535,7 @@ body {
     margin-top: 62px;
 }
 #block2 .myCustomersLogo  .logo8:hover{
-    background-image: url("../images/ФСБ_цв.png");
+    background-image: url("../images/FSB_col.png");
     background-repeat:no-repeat ;
     background-size: 81%;
     width: 90px;
@@ -535,7 +545,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo9 {
-    background-image: url("../images/Аэрофлот.png");
+    background-image: url("../images/Aeroflot.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 99px;
@@ -545,7 +555,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo10 {
-    background-image: url("../images/Мин. здравоохранения.png");
+    background-image: url("../images/Minzdrav.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 76px;
@@ -555,7 +565,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo11 {
-    background-image: url("../images/Башнефть.png");
+    background-image: url("../images/Bashneft.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -565,7 +575,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo12 {
-    background-image: url("../images/Мин. обороны.png");
+    background-image: url("../images/Minoboroni.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -575,7 +585,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo13 {
-    background-image: url("../images/Мин. спорта.png");
+    background-image: url("../images/Minsporta.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -586,7 +596,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo14 {
-    background-image: url("../images/Транснефть.png");
+    background-image: url("../images/Transneft.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 70px;
@@ -596,7 +606,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo15 {
-    background-image: url("../images/Мин. юстиции.png");
+    background-image: url("../images/Minust.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -617,7 +627,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo9:hover {
-    background-image: url("../images/Аэрофлот_цв.png");
+    background-image: url("../images/Aeroflot_col.png");
     background-repeat: no-repeat;
     width: 99px;
     height: 44px;
@@ -626,7 +636,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo10:hover {
-    background-image: url("../images/Мин. здравоохранения_цв.png");
+    background-image: url("../images/Minzdrav_col.png");
     width: 76px;
     height: 86px;
     margin: auto;
@@ -634,7 +644,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo11:hover {
-    background-image: url("../images/Башнефть_цв.png");
+    background-image: url("../images/Bashneft_col.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -644,7 +654,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo12:hover {
-    background-image: url("../images/Мин. обороны_цв.png");
+    background-image: url("../images/Minoboroni_col.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -654,7 +664,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo13:hover {
-    background-image: url("../images/Мин. спорта_цв.png");
+    background-image: url("../images/Minsporta_col.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -665,7 +675,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo14:hover {
-    background-image: url("../images/Транснефть_цв.png");
+    background-image: url("../images/Transneft_col.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 70px;
@@ -675,7 +685,7 @@ body {
 }
 
 #block2 .myCustomersLogo .logo15:hover {
-    background-image: url("../images/Мин. юстиции_цв.png");
+    background-image: url("../images/Minust_col.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 90px;
@@ -1243,7 +1253,7 @@ body {
     width: 312px;
     padding-top: 51px;
     line-height: 40px;
-    margin-left: 144px;
+    margin-left: 110px;
     color: #ffffff;
 
 }
@@ -1256,12 +1266,12 @@ body {
 #block10 .info .row1,
 #block10 .info .row3,
 #block10 .info .row4 {
-    margin-left: 147px;
+    margin-left: 110px;
 }
 
 #block10 .info .row1 p:nth-child(1),
 #block10 .info .row3 p:nth-child(1) {
-    margin-right: 76px;
+    margin-right: 144px;
 }
 
 #block10 .info .row1 p,
@@ -1731,9 +1741,15 @@ ul[rn-carousel] {
 }
 
 ul[rn-carousel] {
-    width: 400px;
-    height: 200px;
+    width: 442px;
+    height: 300px;
     margin: 0 auto;
+}
+
+.lastSlider{
+    margin-top: 63px!important;
+    width: 585px!important;
+    height: 464px!important;
 }
 
 

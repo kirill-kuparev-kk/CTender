@@ -253,8 +253,8 @@
             <!--</a>-->
 
             <div class="nextInfo">
-                <p>0{{carouselIndex+1}}</p>
-                <p ng-if="carouselIndex==10">{{carouselIndex}}</p>
+                <p ng-if="carouselIndex!==9">0{{carouselIndex+1}}</p>
+                <p ng-if="carouselIndex==9">{{carouselIndex+1}}</p>
             </div>
     </div>
     <div id="block7">
@@ -267,7 +267,7 @@
 
                 <div class="input-group" style="width: 428px;margin: auto;margin-top: 44px;">
                     <input type="text" class="form-control"  placeholder="Номер тендера или ссылка" style="    height: 56px;
-        border-bottom-left-radius: 36px; border-top-left-radius:36px">
+        border-bottom-left-radius: 36px; border-top-left-radius:36px" ng-model="client.number">
                     <span class="input-group-btn">
                         <button class="btn btn-default check" type="button" ng-click="clickToOpen()">Рассчтать</button>
                     </span>
@@ -363,57 +363,61 @@
                     <p>Выиграно тендеров</p>
                 </div>
                 <div class="row2">
-                    <p>46</p>
-                    <p>31</p>
+                    <p ng-if="carouselIndex2==0" style="margin-right: 215px;">17</p>
+                    <p ng-if="carouselIndex2==0">12</p>
+                    <p ng-if="carouselIndex2==1" style="margin-right: 214px;">13</p>
+                    <p ng-if="carouselIndex2==1">7</p>
+                    <p ng-if="carouselIndex2==2" style="margin-right: 207px;">52</p>
+                    <p ng-if="carouselIndex2==2">35</p>
+                    <p ng-if="carouselIndex2==3" style="margin-right: 226px;">9</p>
+                    <p ng-if="carouselIndex2==3">4</p>
                 </div>
                 <div class="row3">
                     <p>Сумма контрактов(р)</p>
                     <p>Регион участия</p>
                 </div>
                 <div class="row4">
-                    <p>< 8 млн.</p>
-                    <p>Краснодар</p>
+                    <p ng-if="carouselIndex2==0" style="margin-right: 77px;">6 990 381 p</p>
+                    <p ng-if="carouselIndex2==1" style="margin-right: 77px;">2 473 385 р</p>
+                    <p ng-if="carouselIndex2==2" style="margin-right: 68px;">11 215 889 р</p>
+                    <p ng-if="carouselIndex2==3" style="margin-right: 58px;">10 878 660 р</p>
+                    <p ng-if="carouselIndex2==0">Краснодар</p>
+                    <p ng-if="carouselIndex2==1">Краснодар</p>
+                    <p ng-if="carouselIndex2==2">Севастополь</p>
+                    <p ng-if="carouselIndex2==3">Москва</p>
                 </div>
             </div>
         </div>
         <div class="reviews col-lg-6 col-xs-6 col-md-6">
-            <div id="carousel_1" class="carousel slide" data-ride="carousel">
+            <ul rn-carousel   slides="slides" rn-carousel-index="carouselIndex2" class="lastSlider">
+                    <span class="rn-carousel-control rn-carousel-control-prev ng-scope" ng-click="prevSlide()" style="z-index: 1000">
+                        <img src="../images/arrowNext.png" style="
+                            transform: rotate(180deg);
+                            width: 70px;
+                            margin-top: -25px;
+                            margin-left: -30px">
+                    </span>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-
-                    <div class="item" ng-repeat="Claent in Claents" ng-class="{active : $first}">
+                    <li class="item" ng-repeat="Claent in Claents" >
                         <div class="avatar">
-                            <img src="{{Claent.img}}">
+                            <img ng-src="{{Claent.img}}">
                         </div>
                         <p class="name">{{Claent.name}}</p>
                         <p class="work">{{Claent.work}}</p>
                         <p class="work">{{Claent.tel}}</p>
                         <p class="title">{{Claent.title}}</p>
                         <p class="text">{{Claent.text}}</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <a  href="#carousel_1" role="button" data-slide="prev">
-                    <span  aria-hidden="true"><img src="../images/arrowNext.png" style="    opacity: 1;
-       opacity: 1;
-    position: absolute;
-    margin-top: -307px;
-    margin-left: -8px;
-    transform: rotate(180deg);
-    width: 70px;"></span>
-
-            </a>
-            <a href="#carousel_1" role="button" data-slide="next">
-                <span ><img src="../images/arrowNext.png" style=" opacity: 1;
-    position: absolute;
-    margin-top: -282px;
-    width: 70px;
-    margin-left: 500px;"></span>
-            </a>
+                    </li>
+                     <span class="rn-carousel-control rn-carousel-control-next ng-scope" ng-click="nextSlide()">
+                            <img src="../images/arrowNext.png" style="
+                              width: 70px;
+                              margin-right: -17px">
+                    </span>
+            </ul>
         </div>
+
+
+
     </div>
 
 
@@ -440,29 +444,29 @@
             <div id="carousel_2" class="carousel slide"  data-interval="false">
                 <div class="carousel-inner" role="listbox" style="margin-top: 23px">
                     <div class="item active">
-                        <img src="../images/dip/Агамалян.png" style="width: 200px;height: 300px"  ng-click="clickToOpenDip('modalDip')">
-                        <img src="../images/dip/Русь-ТВ.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip1')">
-                        <img src="../images/dip/Пакета.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip2')">
+                        <img src="../images/dip/Агамалян.png" style="width: 200px;height: 300px;cursor: pointer"  ng-click="clickToOpenDip('modalDip')">
+                        <img src="../images/dip/Русь-ТВ.png" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip1')">
+                        <img src="../images/dip/Пакета.png" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip2')">
 
                     </div>
 
                     <div class="item">
-                        <img src="../images/dip/Алюнест-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip9')">
-                        <img src="../images/dip/Мегаполис.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip4')">
-                        <img src="../images/dip/Наумкина-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip5')">
+                        <img src="../images/dip/Алюнест-1.jpg" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip9')">
+                        <img src="../images/dip/Мегаполис.png" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip4')">
+                        <img src="../images/dip/Наумкина-1.jpg" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip5')">
                     </div>
 
                     <div class="item">
-                        <img src="../images/dip/НПСТЦ-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip6')">
-                        <img src="../images/dip/Анта-С.png" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip7')">
-                        <img src="../images/dip/ЖРС-1.jpg" style="width: 200px;height: 300px" ng-click="clickToOpenDip('modalDip8')">
+                        <img src="../images/dip/НПСТЦ-1.jpg" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip6')">
+                        <img src="../images/dip/Анта-С.png" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip7')">
+                        <img src="../images/dip/ЖРС-1.jpg" style="width: 200px;height: 300px;cursor: pointer" ng-click="clickToOpenDip('modalDip8')">
                     </div>
 
                     <div class="item">
 
-                        <img src="../images/dip/ИдельТехно.jpg" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px" ng-click="clickToOpenDipLend('modalDip3')">
-                        <img src="../images/dip/Солевик.jpg" style="width: 200px;height: 300px;margin-left: 64px" ng-click="clickToOpenDip('modalDip10')">
-                        <img src="../images/dip/ЮжныйМост.png" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px" ng-click="clickToOpenDipLend('modalDip11')">
+                        <img src="../images/dip/ИдельТехно.jpg" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px;cursor: pointer" ng-click="clickToOpenDipLend('modalDip3')">
+                        <img src="../images/dip/Солевик.jpg" style="width: 200px;height: 300px;margin-left: 64px;cursor: pointer" ng-click="clickToOpenDip('modalDip10')">
+                        <img src="../images/dip/ЮжныйМост.png" style="width: 280px;height: 207px;margin-bottom: 37px;margin-left: 64px;cursor: pointer" ng-click="clickToOpenDipLend('modalDip11')">
                     </div>
                 </div>
                 <a  href="#carousel_2" role="button" data-slide="prev">

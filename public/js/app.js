@@ -1,11 +1,15 @@
 'use strict';
 
-angular.module('appCTender', [
+var appCTender=angular.module('appCTender', [
+
     'ui.router',
     'rzModule',
     'ngDialog',
     'ui.bootstrap',
-    'angular-carousel'
+    'angular-carousel',
+    'ngResource'
+
+
 
 ]).config(function($stateProvider, $urlRouterProvider) {
 

@@ -1,22 +1,20 @@
-angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog,$timeout,$http) {
-
+appCTender.controller('AppCtrl', function($scope, ngDialog,Message,$timeout,$http) {
 
 
 
     $scope.client={
       name:"",
-      phone:""
+      phone:"",
+      number:""
     };
 
-    $scope.sendEmailClient=function(){
-        console.log("work");
-        $scope.closeThisDialog();
 
-    $http({
-        url: "http://localhost:3000/#/create",
-        method: "GET",
-        params: {name: $scope.client.name,phone:$scope.client.phone}
-    });};
+    $scope.sendEmailClient=function(){
+
+         Message.sendMessages({client:$scope.client}).$promise.then(function (result) {
+            console.log("11111",result)
+            })
+    };
 
 
 
@@ -145,7 +143,7 @@ angular.module('appCTender').controller('AppCtrl', function($scope, ngDialog,$ti
 
 
 
-  console.log("slid",$scope.slider.value);
+
     $scope.clickToOpen = function () {
         ngDialog.open({ template: '../view/modal.html', className: 'ngdialog-modal' });
     };
